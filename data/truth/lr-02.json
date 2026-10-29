@@ -1,0 +1,140 @@
+{
+  "doc_id": "lr-02",
+  "doc_type": "loss_run",
+  "file": "docs/lr-02.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "standard",
+  "layout": "B",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "carrier_name": {
+      "value": "Bluefen Casualty Company",
+      "page": 1,
+      "text": "Bluefen Casualty Company"
+    },
+    "insured_name": {
+      "value": "Larkspur Dental Group",
+      "page": 1,
+      "text": "Named Insured: Larkspur Dental Group"
+    },
+    "policy_number": {
+      "value": "BFC-GL-2024-200899",
+      "page": 1,
+      "text": "Policy Number: BFC-GL-2024-200899"
+    },
+    "policy_period_start": {
+      "value": "2024-04-01",
+      "page": 1,
+      "text": "Policy Period: 2024-04-01 to 2025-04-01"
+    },
+    "policy_period_end": {
+      "value": "2025-04-01",
+      "page": 1,
+      "text": "Policy Period: 2024-04-01 to 2025-04-01"
+    },
+    "valuation_date": {
+      "value": "2026-09-30",
+      "page": 1,
+      "text": "Valuation Date: 2026-09-30"
+    },
+    "total_paid": {
+      "value": 199559.67,
+      "page": 1,
+      "text": "Totals (8 claims) 199,559.67 103,845.89 303,405.56"
+    },
+    "total_reserved": {
+      "value": 103845.89,
+      "page": 1,
+      "text": "Totals (8 claims) 199,559.67 103,845.89 303,405.56"
+    },
+    "total_incurred": {
+      "value": 303405.56,
+      "page": 1,
+      "text": "Totals (8 claims) 199,559.67 103,845.89 303,405.56"
+    }
+  },
+  "claims": [
+    {
+      "claim_number": "BFC24-62667",
+      "date_of_loss": "2024-07-05",
+      "status": "closed",
+      "paid": 3756.42,
+      "reserved": 0.0,
+      "incurred": 3756.42,
+      "page": 1,
+      "text": "BFC24-62667 2024-07-05 Water damage, stock room CLOSED 3,756.42 0.00 3,756.42"
+    },
+    {
+      "claim_number": "BFC24-95763",
+      "date_of_loss": "2024-08-05",
+      "status": "closed",
+      "paid": 35133.58,
+      "reserved": 0.0,
+      "incurred": 35133.58,
+      "page": 1,
+      "text": "BFC24-95763 2024-08-05 Fall from ladder, knee CLOSED 35,133.58 0.00 35,133.58"
+    },
+    {
+      "claim_number": "BFC24-72248",
+      "date_of_loss": "2024-10-17",
+      "status": "open",
+      "paid": 2605.49,
+      "reserved": 27533.26,
+      "incurred": 30138.75,
+      "page": 1,
+      "text": "BFC24-72248 2024-10-17 Slip on wet floor, wrist sprain OPEN 2,605.49 27,533.26 30,138.75"
+    },
+    {
+      "claim_number": "BFC24-80512",
+      "date_of_loss": "2024-11-03",
+      "status": "closed",
+      "paid": 31022.73,
+      "reserved": 0.0,
+      "incurred": 31022.73,
+      "page": 1,
+      "text": "BFC24-80512 2024-11-03 Water damage, stock room CLOSED 31,022.73 0.00 31,022.73"
+    },
+    {
+      "claim_number": "BFC24-23992",
+      "date_of_loss": "2024-12-13",
+      "status": "open",
+      "paid": 25347.07,
+      "reserved": 18323.68,
+      "incurred": 43670.75,
+      "page": 1,
+      "text": "BFC24-23992 2024-12-13 Lifting strain, lower back OPEN 25,347.07 18,323.68 43,670.75"
+    },
+    {
+      "claim_number": "BFC24-54586",
+      "date_of_loss": "2025-03-01",
+      "status": "closed",
+      "paid": 32877.21,
+      "reserved": 0.0,
+      "incurred": 32877.21,
+      "page": 1,
+      "text": "BFC24-54586 2025-03-01 Forklift contact, foot CLOSED 32,877.21 0.00 32,877.21"
+    },
+    {
+      "claim_number": "BFC24-74956",
+      "date_of_loss": "2025-03-04",
+      "status": "open",
+      "paid": 39792.76,
+      "reserved": 29872.51,
+      "incurred": 69665.27,
+      "page": 1,
+      "text": "BFC24-74956 2025-03-04 Eye irritation, chemical OPEN 39,792.76 29,872.51 69,665.27"
+    },
+    {
+      "claim_number": "BFC24-89794",
+      "date_of_loss": "2025-03-11",
+      "status": "open",
+      "paid": 29024.41,
+      "reserved": 28116.44,
+      "incurred": 57140.85,
+      "page": 1,
+      "text": "BFC24-89794 2025-03-11 Pinch point, conveyor OPEN 29,024.41 28,116.44 57,140.85"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "doc_id": "w2-09",
+  "doc_type": "w2",
+  "file": "docs/w2-09.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "standard",
+  "layout": "A",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "tax_year": {
+      "value": 2025,
+      "page": 1,
+      "text": "2025"
+    },
+    "employee_ssn": {
+      "value": "XXX-XX-1853",
+      "page": 1,
+      "text": "XXX-XX-1853"
+    },
+    "employer_ein": {
+      "value": "50-8894895",
+      "page": 1,
+      "text": "50-8894895"
+    },
+    "employer_name": {
+      "value": "Glasswing Pediatrics PLLC",
+      "page": 1,
+      "text": "Glasswing Pediatrics PLLC"
+    },
+    "employee_name": {
+      "value": "Jonah Brennan",
+      "page": 1,
+      "text": "Jonah Brennan"
+    },
+    "wages": {
+      "value": 135086.72,
+      "page": 1,
+      "text": "135,086.72"
+    },
+    "federal_income_tax_withheld": {
+      "value": 14948.17,
+      "page": 1,
+      "text": "14,948.17"
+    },
+    "social_security_wages": {
+      "value": 135086.72,
+      "page": 1,
+      "text": "135,086.72"
+    },
+    "social_security_tax_withheld": {
+      "value": 8375.38,
+      "page": 1,
+      "text": "8,375.38"
+    },
+    "medicare_wages": {
+      "value": 135086.72,
+      "page": 1,
+      "text": "135,086.72"
+    },
+    "medicare_tax_withheld": {
+      "value": 1958.76,
+      "page": 1,
+      "text": "1,958.76"
+    }
+  }
+}

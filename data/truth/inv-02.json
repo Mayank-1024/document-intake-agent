@@ -1,0 +1,121 @@
+{
+  "doc_id": "inv-02",
+  "doc_type": "invoice",
+  "file": "docs/inv-02.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "standard",
+  "layout": "B",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "vendor_name": {
+      "value": "Marrow Creek Electrical Supply",
+      "page": 1,
+      "text": "Marrow Creek Electrical Supply"
+    },
+    "invoice_number": {
+      "value": "B295497",
+      "page": 1,
+      "text": "Bill Number: B295497"
+    },
+    "invoice_date": {
+      "value": "2026-09-04",
+      "page": 1,
+      "text": "Date Issued: September 4, 2026"
+    },
+    "due_date": {
+      "value": "2026-09-19",
+      "page": 1,
+      "text": "Payment Due: September 19, 2026"
+    },
+    "payment_terms": {
+      "value": "Net 15",
+      "page": 1,
+      "text": "Terms: Net 15"
+    },
+    "po_number": {
+      "value": "PO-6520",
+      "page": 1,
+      "text": "Customer PO: PO-6520"
+    },
+    "customer_name": {
+      "value": "Larkspur Dental Group",
+      "page": 1,
+      "text": "Larkspur Dental Group"
+    },
+    "subtotal": {
+      "value": 2896.1,
+      "page": 1,
+      "text": "Subtotal $2,896.10"
+    },
+    "tax": {
+      "value": 202.73,
+      "page": 1,
+      "text": "Sales Tax (7.00%) $202.73"
+    },
+    "total": {
+      "value": 3098.83,
+      "page": 1,
+      "text": "Amount Due $3,098.83"
+    }
+  },
+  "line_items": [
+    {
+      "description": "Copy paper, 10-ream case",
+      "quantity": 21,
+      "unit_price": 52.0,
+      "amount": 1092.0,
+      "page": 1,
+      "text": "Copy paper, 10-ream case 21 52.00 1,092.00"
+    },
+    {
+      "description": "Toner cartridge, black",
+      "quantity": 9,
+      "unit_price": 89.0,
+      "amount": 801.0,
+      "page": 1,
+      "text": "Toner cartridge, black 9 89.00 801.00"
+    },
+    {
+      "description": "Work gloves, leather palm",
+      "quantity": 7,
+      "unit_price": 9.4,
+      "amount": 65.8,
+      "page": 1,
+      "text": "Work gloves, leather palm 7 9.40 65.80"
+    },
+    {
+      "description": "Safety glasses, clear lens",
+      "quantity": 15,
+      "unit_price": 4.95,
+      "amount": 74.25,
+      "page": 1,
+      "text": "Safety glasses, clear lens 15 4.95 74.25"
+    },
+    {
+      "description": "Floor cleaner concentrate 1 gal",
+      "quantity": 13,
+      "unit_price": 23.85,
+      "amount": 310.05,
+      "page": 1,
+      "text": "Floor cleaner concentrate 1 gal 13 23.85 310.05"
+    },
+    {
+      "description": "Hex bolt 3/8 x 2 in, box of 50",
+      "quantity": 7,
+      "unit_price": 14.2,
+      "amount": 99.4,
+      "page": 1,
+      "text": "Hex bolt 3/8 x 2 in, box of 50 7 14.20 99.40"
+    },
+    {
+      "description": "Packing tape 2 in, case of 36",
+      "quantity": 7,
+      "unit_price": 64.8,
+      "amount": 453.6,
+      "page": 1,
+      "text": "Packing tape 2 in, case of 36 7 64.80 453.60"
+    }
+  ]
+}

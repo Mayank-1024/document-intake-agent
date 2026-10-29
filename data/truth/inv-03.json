@@ -1,0 +1,113 @@
+{
+  "doc_id": "inv-03",
+  "doc_type": "invoice",
+  "file": "docs/inv-03.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "standard",
+  "layout": "A",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "vendor_name": {
+      "value": "Brightwater Industrial Supply LLC",
+      "page": 1,
+      "text": "Brightwater Industrial Supply LLC"
+    },
+    "invoice_number": {
+      "value": "INV-24696",
+      "page": 1,
+      "text": "Invoice No.: INV-24696"
+    },
+    "invoice_date": {
+      "value": "2026-01-17",
+      "page": 1,
+      "text": "Invoice Date: 01/17/2026"
+    },
+    "due_date": {
+      "value": "2026-03-03",
+      "page": 1,
+      "text": "Due Date: 03/03/2026"
+    },
+    "payment_terms": {
+      "value": "Net 45",
+      "page": 1,
+      "text": "Terms: Net 45"
+    },
+    "po_number": {
+      "value": "PO-9196",
+      "page": 1,
+      "text": "PO Number: PO-9196"
+    },
+    "customer_name": {
+      "value": "Larkspur Dental Group",
+      "page": 1,
+      "text": "Larkspur Dental Group"
+    },
+    "subtotal": {
+      "value": 3020.55,
+      "page": 1,
+      "text": "Subtotal $3,020.55"
+    },
+    "tax": {
+      "value": 211.44,
+      "page": 1,
+      "text": "Sales Tax (7.00%) $211.44"
+    },
+    "total": {
+      "value": 3231.99,
+      "page": 1,
+      "text": "Total Due $3,231.99"
+    }
+  },
+  "line_items": [
+    {
+      "description": "Extension cord 25 ft 12 AWG",
+      "quantity": 20,
+      "unit_price": 37.5,
+      "amount": 750.0,
+      "page": 1,
+      "text": "Extension cord 25 ft 12 AWG 20 37.50 750.00"
+    },
+    {
+      "description": "Wire nuts assorted, jar",
+      "quantity": 16,
+      "unit_price": 12.15,
+      "amount": 194.4,
+      "page": 1,
+      "text": "Wire nuts assorted, jar 16 12.15 194.40"
+    },
+    {
+      "description": "Copy paper, 10-ream case",
+      "quantity": 13,
+      "unit_price": 52.0,
+      "amount": 676.0,
+      "page": 1,
+      "text": "Copy paper, 10-ream case 13 52.00 676.00"
+    },
+    {
+      "description": "Copy paper, 10-ream case",
+      "quantity": 14,
+      "unit_price": 52.0,
+      "amount": 728.0,
+      "page": 1,
+      "text": "Copy paper, 10-ream case 14 52.00 728.00"
+    },
+    {
+      "description": "Wire nuts assorted, jar",
+      "quantity": 1,
+      "unit_price": 12.15,
+      "amount": 12.15,
+      "page": 1,
+      "text": "Wire nuts assorted, jar 1 12.15 12.15"
+    },
+    {
+      "description": "Trash liners 55 gal, case",
+      "quantity": 16,
+      "unit_price": 41.25,
+      "amount": 660.0,
+      "page": 1,
+      "text": "Trash liners 55 gal, case 16 41.25 660.00"
+    }
+  ]
+}

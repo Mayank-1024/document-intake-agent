@@ -1,0 +1,105 @@
+{
+  "doc_id": "inv-04",
+  "doc_type": "invoice",
+  "file": "docs/inv-04.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "standard",
+  "layout": "B",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "vendor_name": {
+      "value": "Marrow Creek Electrical Supply",
+      "page": 1,
+      "text": "Marrow Creek Electrical Supply"
+    },
+    "invoice_number": {
+      "value": "B594951",
+      "page": 1,
+      "text": "Bill Number: B594951"
+    },
+    "invoice_date": {
+      "value": "2026-06-09",
+      "page": 1,
+      "text": "Date Issued: June 9, 2026"
+    },
+    "due_date": {
+      "value": "2026-07-09",
+      "page": 1,
+      "text": "Payment Due: July 9, 2026"
+    },
+    "payment_terms": {
+      "value": "Net 30",
+      "page": 1,
+      "text": "Terms: Net 30"
+    },
+    "po_number": {
+      "value": "PO-7562",
+      "page": 1,
+      "text": "Customer PO: PO-7562"
+    },
+    "customer_name": {
+      "value": "Ashgrove Veterinary Clinic",
+      "page": 1,
+      "text": "Ashgrove Veterinary Clinic"
+    },
+    "subtotal": {
+      "value": 3245.55,
+      "page": 1,
+      "text": "Subtotal $3,245.55"
+    },
+    "tax": {
+      "value": 202.85,
+      "page": 1,
+      "text": "Sales Tax (6.25%) $202.85"
+    },
+    "total": {
+      "value": 3448.4,
+      "page": 1,
+      "text": "Amount Due $3,448.40"
+    }
+  },
+  "line_items": [
+    {
+      "description": "Copy paper, 10-ream case",
+      "quantity": 21,
+      "unit_price": 52.0,
+      "amount": 1092.0,
+      "page": 1,
+      "text": "Copy paper, 10-ream case 21 52.00 1,092.00"
+    },
+    {
+      "description": "Trash liners 55 gal, case",
+      "quantity": 12,
+      "unit_price": 41.25,
+      "amount": 495.0,
+      "page": 1,
+      "text": "Trash liners 55 gal, case 12 41.25 495.00"
+    },
+    {
+      "description": "Trash liners 55 gal, case",
+      "quantity": 23,
+      "unit_price": 41.25,
+      "amount": 948.75,
+      "page": 1,
+      "text": "Trash liners 55 gal, case 23 41.25 948.75"
+    },
+    {
+      "description": "Extension cord 25 ft 12 AWG",
+      "quantity": 18,
+      "unit_price": 37.5,
+      "amount": 675.0,
+      "page": 1,
+      "text": "Extension cord 25 ft 12 AWG 18 37.50 675.00"
+    },
+    {
+      "description": "LED tube lamp 4 ft",
+      "quantity": 3,
+      "unit_price": 11.6,
+      "amount": 34.8,
+      "page": 1,
+      "text": "LED tube lamp 4 ft 3 11.60 34.80"
+    }
+  ]
+}

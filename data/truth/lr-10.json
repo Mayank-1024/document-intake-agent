@@ -1,0 +1,140 @@
+{
+  "doc_id": "lr-10",
+  "doc_type": "loss_run",
+  "file": "docs/lr-10.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "standard",
+  "layout": "B",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "carrier_name": {
+      "value": "Bluefen Casualty Company",
+      "page": 1,
+      "text": "Bluefen Casualty Company"
+    },
+    "insured_name": {
+      "value": "Tamberlane Freight Systems Inc.",
+      "page": 1,
+      "text": "Named Insured: Tamberlane Freight Systems Inc."
+    },
+    "policy_number": {
+      "value": "BFC-WC-2024-568772",
+      "page": 1,
+      "text": "Policy Number: BFC-WC-2024-568772"
+    },
+    "policy_period_start": {
+      "value": "2024-04-01",
+      "page": 1,
+      "text": "Policy Period: 2024-04-01 to 2025-04-01"
+    },
+    "policy_period_end": {
+      "value": "2025-04-01",
+      "page": 1,
+      "text": "Policy Period: 2024-04-01 to 2025-04-01"
+    },
+    "valuation_date": {
+      "value": "2026-09-30",
+      "page": 1,
+      "text": "Valuation Date: 2026-09-30"
+    },
+    "total_paid": {
+      "value": 195180.38,
+      "page": 1,
+      "text": "Totals (8 claims) 195,180.38 73,111.68 268,292.06"
+    },
+    "total_reserved": {
+      "value": 73111.68,
+      "page": 1,
+      "text": "Totals (8 claims) 195,180.38 73,111.68 268,292.06"
+    },
+    "total_incurred": {
+      "value": 268292.06,
+      "page": 1,
+      "text": "Totals (8 claims) 195,180.38 73,111.68 268,292.06"
+    }
+  },
+  "claims": [
+    {
+      "claim_number": "BFC24-31861",
+      "date_of_loss": "2024-05-14",
+      "status": "open",
+      "paid": 13518.86,
+      "reserved": 29865.64,
+      "incurred": 43384.5,
+      "page": 1,
+      "text": "BFC24-31861 2024-05-14 Water damage, stock room OPEN 13,518.86 29,865.64 43,384.50"
+    },
+    {
+      "claim_number": "BFC24-69822",
+      "date_of_loss": "2024-06-01",
+      "status": "open",
+      "paid": 8621.58,
+      "reserved": 18837.87,
+      "incurred": 27459.45,
+      "page": 1,
+      "text": "BFC24-69822 2024-06-01 Fall from ladder, knee OPEN 8,621.58 18,837.87 27,459.45"
+    },
+    {
+      "claim_number": "BFC24-30451",
+      "date_of_loss": "2024-06-15",
+      "status": "closed",
+      "paid": 14028.24,
+      "reserved": 0.0,
+      "incurred": 14028.24,
+      "page": 1,
+      "text": "BFC24-30451 2024-06-15 Eye irritation, chemical CLOSED 14,028.24 0.00 14,028.24"
+    },
+    {
+      "claim_number": "BFC24-10476",
+      "date_of_loss": "2024-07-16",
+      "status": "closed",
+      "paid": 40894.28,
+      "reserved": 0.0,
+      "incurred": 40894.28,
+      "page": 1,
+      "text": "BFC24-10476 2024-07-16 Vehicle backing, rear bumper CLOSED 40,894.28 0.00 40,894.28"
+    },
+    {
+      "claim_number": "BFC24-77981",
+      "date_of_loss": "2024-10-01",
+      "status": "open",
+      "paid": 20512.48,
+      "reserved": 15937.65,
+      "incurred": 36450.13,
+      "page": 1,
+      "text": "BFC24-77981 2024-10-01 Water damage, stock room OPEN 20,512.48 15,937.65 36,450.13"
+    },
+    {
+      "claim_number": "BFC24-84865",
+      "date_of_loss": "2024-11-11",
+      "status": "closed",
+      "paid": 44471.0,
+      "reserved": 0.0,
+      "incurred": 44471.0,
+      "page": 1,
+      "text": "BFC24-84865 2024-11-11 Burn, fryer splash CLOSED 44,471.00 0.00 44,471.00"
+    },
+    {
+      "claim_number": "BFC24-55867",
+      "date_of_loss": "2025-02-01",
+      "status": "closed",
+      "paid": 14373.16,
+      "reserved": 0.0,
+      "incurred": 14373.16,
+      "page": 1,
+      "text": "BFC24-55867 2025-02-01 Slip on wet floor, wrist sprain CLOSED 14,373.16 0.00 14,373.16"
+    },
+    {
+      "claim_number": "BFC24-76391",
+      "date_of_loss": "2025-02-05",
+      "status": "open",
+      "paid": 38760.78,
+      "reserved": 8470.52,
+      "incurred": 47231.3,
+      "page": 1,
+      "text": "BFC24-76391 2025-02-05 Eye irritation, chemical OPEN 38,760.78 8,470.52 47,231.30"
+    }
+  ]
+}

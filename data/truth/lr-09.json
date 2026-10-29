@@ -1,0 +1,100 @@
+{
+  "doc_id": "lr-09",
+  "doc_type": "loss_run",
+  "file": "docs/lr-09.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "scanned_pdf",
+  "layout": "A",
+  "expected_review": true,
+  "expected_reason": "no_text_layer",
+  "fields": {
+    "carrier_name": {
+      "value": "Northlight Specialty Insurance",
+      "page": 1,
+      "text": "Northlight Specialty Insurance"
+    },
+    "insured_name": {
+      "value": "Fenwick Hollow Bakery Inc.",
+      "page": 1,
+      "text": "Named Insured: Fenwick Hollow Bakery Inc."
+    },
+    "policy_number": {
+      "value": "NLS-GL-2024-811625",
+      "page": 1,
+      "text": "Policy Number: NLS-GL-2024-811625"
+    },
+    "policy_period_start": {
+      "value": "2024-07-01",
+      "page": 1,
+      "text": "Policy Period: 07/01/2024 - 07/01/2025"
+    },
+    "policy_period_end": {
+      "value": "2025-07-01",
+      "page": 1,
+      "text": "Policy Period: 07/01/2024 - 07/01/2025"
+    },
+    "valuation_date": {
+      "value": "2026-09-30",
+      "page": 1,
+      "text": "Valuation Date: 09/30/2026"
+    },
+    "total_paid": {
+      "value": 80996.03,
+      "page": 1,
+      "text": "Totals (4 claims) 80,996.03 0.00 80,996.03"
+    },
+    "total_reserved": {
+      "value": 0.0,
+      "page": 1,
+      "text": "Totals (4 claims) 80,996.03 0.00 80,996.03"
+    },
+    "total_incurred": {
+      "value": 80996.03,
+      "page": 1,
+      "text": "Totals (4 claims) 80,996.03 0.00 80,996.03"
+    }
+  },
+  "claims": [
+    {
+      "claim_number": "NLS24-28733",
+      "date_of_loss": "2024-11-05",
+      "status": "closed",
+      "paid": 5887.62,
+      "reserved": 0.0,
+      "incurred": 5887.62,
+      "page": 1,
+      "text": "NLS24-28733 11/05/2024 Forklift contact, foot Closed 5,887.62 0.00 5,887.62"
+    },
+    {
+      "claim_number": "NLS24-99827",
+      "date_of_loss": "2024-11-20",
+      "status": "closed",
+      "paid": 12930.98,
+      "reserved": 0.0,
+      "incurred": 12930.98,
+      "page": 1,
+      "text": "NLS24-99827 11/20/2024 Water damage, stock room Closed 12,930.98 0.00 12,930.98"
+    },
+    {
+      "claim_number": "NLS24-70353",
+      "date_of_loss": "2025-01-28",
+      "status": "closed",
+      "paid": 33800.06,
+      "reserved": 0.0,
+      "incurred": 33800.06,
+      "page": 1,
+      "text": "NLS24-70353 01/28/2025 Pinch point, conveyor Closed 33,800.06 0.00 33,800.06"
+    },
+    {
+      "claim_number": "NLS24-22163",
+      "date_of_loss": "2025-06-24",
+      "status": "closed",
+      "paid": 28377.37,
+      "reserved": 0.0,
+      "incurred": 28377.37,
+      "page": 1,
+      "text": "NLS24-22163 06/24/2025 Customer trip, parking lot Closed 28,377.37 0.00 28,377.37"
+    }
+  ]
+}

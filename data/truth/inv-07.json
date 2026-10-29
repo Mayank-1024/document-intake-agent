@@ -1,0 +1,121 @@
+{
+  "doc_id": "inv-07",
+  "doc_type": "invoice",
+  "file": "docs/inv-07.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "missing_field",
+  "layout": "A",
+  "expected_review": true,
+  "expected_reason": "missing_required",
+  "fields": {
+    "vendor_name": {
+      "value": "Pinegate Janitorial Supply Co.",
+      "page": 1,
+      "text": "Pinegate Janitorial Supply Co."
+    },
+    "invoice_number": {
+      "value": "INV-22937",
+      "page": 1,
+      "text": "Invoice No.: INV-22937"
+    },
+    "invoice_date": {
+      "value": null,
+      "page": null,
+      "text": null
+    },
+    "due_date": {
+      "value": "2026-06-27",
+      "page": 1,
+      "text": "Due Date: 06/27/2026"
+    },
+    "payment_terms": {
+      "value": "Net 30",
+      "page": 1,
+      "text": "Terms: Net 30"
+    },
+    "po_number": {
+      "value": "PO-9793",
+      "page": 1,
+      "text": "PO Number: PO-9793"
+    },
+    "customer_name": {
+      "value": "Quarry Lane Builders LLC",
+      "page": 1,
+      "text": "Quarry Lane Builders LLC"
+    },
+    "subtotal": {
+      "value": 2254.3,
+      "page": 1,
+      "text": "Subtotal $2,254.30"
+    },
+    "tax": {
+      "value": 129.62,
+      "page": 1,
+      "text": "Sales Tax (5.75%) $129.62"
+    },
+    "total": {
+      "value": 2383.92,
+      "page": 1,
+      "text": "Total Due $2,383.92"
+    }
+  },
+  "line_items": [
+    {
+      "description": "Cable ties 8 in, bag of 500",
+      "quantity": 10,
+      "unit_price": 18.3,
+      "amount": 183.0,
+      "page": 1,
+      "text": "Cable ties 8 in, bag of 500 10 18.30 183.00"
+    },
+    {
+      "description": "Safety glasses, clear lens",
+      "quantity": 19,
+      "unit_price": 4.95,
+      "amount": 94.05,
+      "page": 1,
+      "text": "Safety glasses, clear lens 19 4.95 94.05"
+    },
+    {
+      "description": "Hex bolt 3/8 x 2 in, box of 50",
+      "quantity": 16,
+      "unit_price": 14.2,
+      "amount": 227.2,
+      "page": 1,
+      "text": "Hex bolt 3/8 x 2 in, box of 50 16 14.20 227.20"
+    },
+    {
+      "description": "Shop towels, case of 12 rolls",
+      "quantity": 2,
+      "unit_price": 31.4,
+      "amount": 62.8,
+      "page": 1,
+      "text": "Shop towels, case of 12 rolls 2 31.40 62.80"
+    },
+    {
+      "description": "Wire nuts assorted, jar",
+      "quantity": 5,
+      "unit_price": 12.15,
+      "amount": 60.75,
+      "page": 1,
+      "text": "Wire nuts assorted, jar 5 12.15 60.75"
+    },
+    {
+      "description": "Trash liners 55 gal, case",
+      "quantity": 18,
+      "unit_price": 41.25,
+      "amount": 742.5,
+      "page": 1,
+      "text": "Trash liners 55 gal, case 18 41.25 742.50"
+    },
+    {
+      "description": "Copy paper, 10-ream case",
+      "quantity": 17,
+      "unit_price": 52.0,
+      "amount": 884.0,
+      "page": 1,
+      "text": "Copy paper, 10-ream case 17 52.00 884.00"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "doc_id": "lr-06",
+  "doc_type": "loss_run",
+  "file": "docs/lr-06.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "date_out_of_period",
+  "layout": "B",
+  "expected_review": true,
+  "expected_reason": "rule_failed",
+  "fields": {
+    "carrier_name": {
+      "value": "Bluefen Casualty Company",
+      "page": 1,
+      "text": "Bluefen Casualty Company"
+    },
+    "insured_name": {
+      "value": "Quarry Lane Builders LLC",
+      "page": 1,
+      "text": "Named Insured: Quarry Lane Builders LLC"
+    },
+    "policy_number": {
+      "value": "BFC-GL-2024-124308",
+      "page": 1,
+      "text": "Policy Number: BFC-GL-2024-124308"
+    },
+    "policy_period_start": {
+      "value": "2024-01-01",
+      "page": 1,
+      "text": "Policy Period: 2024-01-01 to 2025-01-01"
+    },
+    "policy_period_end": {
+      "value": "2025-01-01",
+      "page": 1,
+      "text": "Policy Period: 2024-01-01 to 2025-01-01"
+    },
+    "valuation_date": {
+      "value": "2026-09-30",
+      "page": 1,
+      "text": "Valuation Date: 2026-09-30"
+    },
+    "total_paid": {
+      "value": 59276.91,
+      "page": 1,
+      "text": "Totals (5 claims) 59,276.91 24,322.25 83,599.16"
+    },
+    "total_reserved": {
+      "value": 24322.25,
+      "page": 1,
+      "text": "Totals (5 claims) 59,276.91 24,322.25 83,599.16"
+    },
+    "total_incurred": {
+      "value": 83599.16,
+      "page": 1,
+      "text": "Totals (5 claims) 59,276.91 24,322.25 83,599.16"
+    }
+  },
+  "claims": [
+    {
+      "claim_number": "BFC24-25618",
+      "date_of_loss": "2024-01-31",
+      "status": "open",
+      "paid": 15078.54,
+      "reserved": 3306.63,
+      "incurred": 18385.17,
+      "page": 1,
+      "text": "BFC24-25618 2024-01-31 Eye irritation, chemical OPEN 15,078.54 3,306.63 18,385.17"
+    },
+    {
+      "claim_number": "BFC24-32327",
+      "date_of_loss": "2025-02-20",
+      "status": "closed",
+      "paid": 19889.74,
+      "reserved": 0.0,
+      "incurred": 19889.74,
+      "page": 1,
+      "text": "BFC24-32327 2025-02-20 Repetitive motion, shoulder CLOSED 19,889.74 0.00 19,889.74"
+    },
+    {
+      "claim_number": "BFC24-19757",
+      "date_of_loss": "2024-06-10",
+      "status": "closed",
+      "paid": 19682.25,
+      "reserved": 0.0,
+      "incurred": 19682.25,
+      "page": 1,
+      "text": "BFC24-19757 2024-06-10 Eye irritation, chemical CLOSED 19,682.25 0.00 19,682.25"
+    },
+    {
+      "claim_number": "BFC24-93102",
+      "date_of_loss": "2024-08-02",
+      "status": "open",
+      "paid": 2607.87,
+      "reserved": 21015.62,
+      "incurred": 23623.49,
+      "page": 1,
+      "text": "BFC24-93102 2024-08-02 Water damage, stock room OPEN 2,607.87 21,015.62 23,623.49"
+    },
+    {
+      "claim_number": "BFC24-54387",
+      "date_of_loss": "2024-09-26",
+      "status": "closed",
+      "paid": 2018.51,
+      "reserved": 0.0,
+      "incurred": 2018.51,
+      "page": 1,
+      "text": "BFC24-54387 2024-09-26 Vehicle backing, rear bumper CLOSED 2,018.51 0.00 2,018.51"
+    }
+  ]
+}

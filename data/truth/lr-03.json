@@ -1,0 +1,130 @@
+{
+  "doc_id": "lr-03",
+  "doc_type": "loss_run",
+  "file": "docs/lr-03.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "standard",
+  "layout": "A",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "carrier_name": {
+      "value": "Northlight Specialty Insurance",
+      "page": 1,
+      "text": "Northlight Specialty Insurance"
+    },
+    "insured_name": {
+      "value": "Glasswing Pediatrics PLLC",
+      "page": 1,
+      "text": "Named Insured: Glasswing Pediatrics PLLC"
+    },
+    "policy_number": {
+      "value": "NLS-GL-2024-560463",
+      "page": 1,
+      "text": "Policy Number: NLS-GL-2024-560463"
+    },
+    "policy_period_start": {
+      "value": "2024-01-01",
+      "page": 1,
+      "text": "Policy Period: 01/01/2024 - 01/01/2025"
+    },
+    "policy_period_end": {
+      "value": "2025-01-01",
+      "page": 1,
+      "text": "Policy Period: 01/01/2024 - 01/01/2025"
+    },
+    "valuation_date": {
+      "value": "2026-09-30",
+      "page": 1,
+      "text": "Valuation Date: 09/30/2026"
+    },
+    "total_paid": {
+      "value": 179477.71,
+      "page": 1,
+      "text": "Totals (7 claims) 179,477.71 115,187.00 294,664.71"
+    },
+    "total_reserved": {
+      "value": 115187.0,
+      "page": 1,
+      "text": "Totals (7 claims) 179,477.71 115,187.00 294,664.71"
+    },
+    "total_incurred": {
+      "value": 294664.71,
+      "page": 1,
+      "text": "Totals (7 claims) 179,477.71 115,187.00 294,664.71"
+    }
+  },
+  "claims": [
+    {
+      "claim_number": "NLS24-10776",
+      "date_of_loss": "2024-02-26",
+      "status": "open",
+      "paid": 44714.91,
+      "reserved": 25604.39,
+      "incurred": 70319.3,
+      "page": 1,
+      "text": "NLS24-10776 02/26/2024 Vehicle backing, rear bumper Open 44,714.91 25,604.39 70,319.30"
+    },
+    {
+      "claim_number": "NLS24-75911",
+      "date_of_loss": "2024-05-31",
+      "status": "open",
+      "paid": 19798.72,
+      "reserved": 19774.71,
+      "incurred": 39573.43,
+      "page": 1,
+      "text": "NLS24-75911 05/31/2024 Laceration, box cutter Open 19,798.72 19,774.71 39,573.43"
+    },
+    {
+      "claim_number": "NLS24-17223",
+      "date_of_loss": "2024-06-03",
+      "status": "open",
+      "paid": 17674.35,
+      "reserved": 21057.67,
+      "incurred": 38732.02,
+      "page": 1,
+      "text": "NLS24-17223 06/03/2024 Repetitive motion, shoulder Open 17,674.35 21,057.67 38,732.02"
+    },
+    {
+      "claim_number": "NLS24-72934",
+      "date_of_loss": "2024-06-28",
+      "status": "closed",
+      "paid": 40117.39,
+      "reserved": 0.0,
+      "incurred": 40117.39,
+      "page": 1,
+      "text": "NLS24-72934 06/28/2024 Lifting strain, lower back Closed 40,117.39 0.00 40,117.39"
+    },
+    {
+      "claim_number": "NLS24-41453",
+      "date_of_loss": "2024-07-25",
+      "status": "closed",
+      "paid": 18095.45,
+      "reserved": 0.0,
+      "incurred": 18095.45,
+      "page": 1,
+      "text": "NLS24-41453 07/25/2024 Vehicle backing, rear bumper Closed 18,095.45 0.00 18,095.45"
+    },
+    {
+      "claim_number": "NLS24-47500",
+      "date_of_loss": "2024-08-10",
+      "status": "open",
+      "paid": 18498.37,
+      "reserved": 25231.22,
+      "incurred": 43729.59,
+      "page": 1,
+      "text": "NLS24-47500 08/10/2024 Customer trip, parking lot Open 18,498.37 25,231.22 43,729.59"
+    },
+    {
+      "claim_number": "NLS24-38917",
+      "date_of_loss": "2024-10-01",
+      "status": "open",
+      "paid": 20578.52,
+      "reserved": 23519.01,
+      "incurred": 44097.53,
+      "page": 1,
+      "text": "NLS24-38917 10/01/2024 Forklift contact, foot Open 20,578.52 23,519.01 44,097.53"
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "doc_id": "lr-04",
+  "doc_type": "loss_run",
+  "file": "docs/lr-04.pdf",
+  "media_type": "application/pdf",
+  "pages": 2,
+  "variant": "two_page",
+  "layout": "B",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "carrier_name": {
+      "value": "Bluefen Casualty Company",
+      "page": 1,
+      "text": "Bluefen Casualty Company"
+    },
+    "insured_name": {
+      "value": "Redfern Mills Bakery Co.",
+      "page": 1,
+      "text": "Named Insured: Redfern Mills Bakery Co."
+    },
+    "policy_number": {
+      "value": "BFC-WC-2024-332468",
+      "page": 1,
+      "text": "Policy Number: BFC-WC-2024-332468"
+    },
+    "policy_period_start": {
+      "value": "2024-04-01",
+      "page": 1,
+      "text": "Policy Period: 2024-04-01 to 2025-04-01"
+    },
+    "policy_period_end": {
+      "value": "2025-04-01",
+      "page": 1,
+      "text": "Policy Period: 2024-04-01 to 2025-04-01"
+    },
+    "valuation_date": {
+      "value": "2026-09-30",
+      "page": 1,
+      "text": "Valuation Date: 2026-09-30"
+    },
+    "total_paid": {
+      "value": 900224.62,
+      "page": 2,
+      "text": "Totals (34 claims) 900,224.62 295,741.97 1,195,966.59"
+    },
+    "total_reserved": {
+      "value": 295741.97,
+      "page": 2,
+      "text": "Totals (34 claims) 900,224.62 295,741.97 1,195,966.59"
+    },
+    "total_incurred": {
+      "value": 1195966.59,
+      "page": 2,
+      "text": "Totals (34 claims) 900,224.62 295,741.97 1,195,966.59"
+    }
+  },
+  "claims": [
+    {
+      "claim_number": "BFC24-93573",
+      "date_of_loss": "2024-04-30",
+      "status": "closed",
+      "paid": 21105.94,
+      "reserved": 0.0,
+      "incurred": 21105.94,
+      "page": 1,
+      "text": "BFC24-93573 2024-04-30 Eye irritation, chemical CLOSED 21,105.94 0.00 21,105.94"
+    },
+    {
+      "claim_number": "BFC24-65980",
+      "date_of_loss": "2024-05-20",
+      "status": "open",
+      "paid": 42058.56,
+      "reserved": 16669.65,
+      "incurred": 58728.21,
+      "page": 1,
+      "text": "BFC24-65980 2024-05-20 Water damage, stock room OPEN 42,058.56 16,669.65 58,728.21"
+    },
+    {
+      "claim_number": "BFC24-30071",
+      "date_of_loss": "2024-05-24",
+      "status": "open",
+      "paid": 27857.58,
+      "reserved": 11185.44,
+      "incurred": 39043.02,
+      "page": 1,
+      "text": "BFC24-30071 2024-05-24 Burn, fryer splash OPEN 27,857.58 11,185.44 39,043.02"
+    },
+    {
+      "claim_number": "BFC24-72187",
+      "date_of_loss": "2024-06-04",
+      "status": "closed",
+      "paid": 43650.35,
+      "reserved": 0.0,
+      "incurred": 43650.35,
+      "page": 1,
+      "text": "BFC24-72187 2024-06-04 Pinch point, conveyor CLOSED 43,650.35 0.00 43,650.35"
+    },
+    {
+      "claim_number": "BFC24-44256",
+      "date_of_loss": "2024-06-11",
+      "status": "closed",
+      "paid": 26186.68,
+      "reserved": 0.0,
+      "incurred": 26186.68,
+      "page": 1,
+      "text": "BFC24-44256 2024-06-11 Fall from ladder, knee CLOSED 26,186.68 0.00 26,186.68"
+    },
+    {
+      "claim_number": "BFC24-86599",
+      "date_of_loss": "2024-06-12",
+      "status": "open",
+      "paid": 45304.69,
+      "reserved": 23484.69,
+      "incurred": 68789.38,
+      "page": 1,
+      "text": "BFC24-86599 2024-06-12 Eye irritation, chemical OPEN 45,304.69 23,484.69 68,789.38"
+    },
+    {
+      "claim_number": "BFC24-85557",
+      "date_of_loss": "2024-06-23",
+      "status": "closed",
+      "paid": 33232.48,
+      "reserved": 0.0,
+      "incurred": 33232.48,
+      "page": 1,
+      "text": "BFC24-85557 2024-06-23 Lifting strain, lower back CLOSED 33,232.48 0.00 33,232.48"
+    },
+    {
+      "claim_number": "BFC24-53343",
+      "date_of_loss": "2024-06-24",
+      "status": "open",
+      "paid": 3920.24,
+      "reserved": 17642.96,
+      "incurred": 21563.2,
+      "page": 1,
+      "text": "BFC24-53343 2024-06-24 Pinch point, conveyor OPEN 3,920.24 17,642.96 21,563.20"
+    },
+    {
+      "claim_number": "BFC24-80014",
+      "date_of_loss": "2024-06-30",
+      "status": "open",
+      "paid": 30182.68,
+      "reserved": 6250.02,
+      "incurred": 36432.7,
+      "page": 1,
+      "text": "BFC24-80014 2024-06-30 Lifting strain, lower back OPEN 30,182.68 6,250.02 36,432.70"
+    },
+    {
+      "claim_number": "BFC24-16612",
+      "date_of_loss": "2024-07-09",
+      "status": "open",
+      "paid": 31705.36,
+      "reserved": 25085.96,
+      "incurred": 56791.32,
+      "page": 1,
+      "text": "BFC24-16612 2024-07-09 Customer trip, parking lot OPEN 31,705.36 25,085.96 56,791.32"
+    },
+    {
+      "claim_number": "BFC24-33547",
+      "date_of_loss": "2024-07-11",
+      "status": "closed",
+      "paid": 41084.06,
+      "reserved": 0.0,
+      "incurred": 41084.06,
+      "page": 1,
+      "text": "BFC24-33547 2024-07-11 Burn, fryer splash CLOSED 41,084.06 0.00 41,084.06"
+    },
+    {
+      "claim_number": "BFC24-61968",
+      "date_of_loss": "2024-08-01",
+      "status": "closed",
+      "paid": 6976.63,
+      "reserved": 0.0,
+      "incurred": 6976.63,
+      "page": 1,
+      "text": "BFC24-61968 2024-08-01 Customer trip, parking lot CLOSED 6,976.63 0.00 6,976.63"
+    },
+    {
+      "claim_number": "BFC24-85978",
+      "date_of_loss": "2024-08-03",
+      "status": "open",
+      "paid": 9565.19,
+      "reserved": 17686.67,
+      "incurred": 27251.86,
+      "page": 1,
+      "text": "BFC24-85978 2024-08-03 Repetitive motion, shoulder OPEN 9,565.19 17,686.67 27,251.86"
+    },
+    {
+      "claim_number": "BFC24-68114",
+      "date_of_loss": "2024-08-14",
+      "status": "open",
+      "paid": 8003.63,
+      "reserved": 28533.11,
+      "incurred": 36536.74,
+      "page": 1,
+      "text": "BFC24-68114 2024-08-14 Vehicle backing, rear bumper OPEN 8,003.63 28,533.11 36,536.74"
+    },
+    {
+      "claim_number": "BFC24-37803",
+      "date_of_loss": "2024-09-13",
+      "status": "open",
+      "paid": 20447.51,
+      "reserved": 9186.15,
+      "incurred": 29633.66,
+      "page": 1,
+      "text": "BFC24-37803 2024-09-13 Repetitive motion, shoulder OPEN 20,447.51 9,186.15 29,633.66"
+    },
+    {
+      "claim_number": "BFC24-72358",
+      "date_of_loss": "2024-09-27",
+      "status": "open",
+      "paid": 23338.2,
+      "reserved": 15105.24,
+      "incurred": 38443.44,
+      "page": 1,
+      "text": "BFC24-72358 2024-09-27 Forklift contact, foot OPEN 23,338.20 15,105.24 38,443.44"
+    },
+    {
+      "claim_number": "BFC24-43333",
+      "date_of_loss": "2024-10-02",
+      "status": "open",
+      "paid": 24883.47,
+      "reserved": 28896.79,
+      "incurred": 53780.26,
+      "page": 1,
+      "text": "BFC24-43333 2024-10-02 Fall from ladder, knee OPEN 24,883.47 28,896.79 53,780.26"
+    },
+    {
+      "claim_number": "BFC24-91513",
+      "date_of_loss": "2024-10-18",
+      "status": "open",
+      "paid": 32010.45,
+      "reserved": 12867.94,
+      "incurred": 44878.39,
+      "page": 1,
+      "text": "BFC24-91513 2024-10-18 Lifting strain, lower back OPEN 32,010.45 12,867.94 44,878.39"
+    },
+    {
+      "claim_number": "BFC24-54253",
+      "date_of_loss": "2024-10-30",
+      "status": "closed",
+      "paid": 32208.77,
+      "reserved": 0.0,
+      "incurred": 32208.77,
+      "page": 1,
+      "text": "BFC24-54253 2024-10-30 Pinch point, conveyor CLOSED 32,208.77 0.00 32,208.77"
+    },
+    {
+      "claim_number": "BFC24-83838",
+      "date_of_loss": "2024-11-30",
+      "status": "closed",
+      "paid": 28815.37,
+      "reserved": 0.0,
+      "incurred": 28815.37,
+      "page": 1,
+      "text": "BFC24-83838 2024-11-30 Laceration, box cutter CLOSED 28,815.37 0.00 28,815.37"
+    },
+    {
+      "claim_number": "BFC24-74151",
+      "date_of_loss": "2024-12-08",
+      "status": "open",
+      "paid": 17887.23,
+      "reserved": 9372.87,
+      "incurred": 27260.1,
+      "page": 1,
+      "text": "BFC24-74151 2024-12-08 Forklift contact, foot OPEN 17,887.23 9,372.87 27,260.10"
+    },
+    {
+      "claim_number": "BFC24-17894",
+      "date_of_loss": "2024-12-27",
+      "status": "open",
+      "paid": 28637.71,
+      "reserved": 17247.86,
+      "incurred": 45885.57,
+      "page": 1,
+      "text": "BFC24-17894 2024-12-27 Pinch point, conveyor OPEN 28,637.71 17,247.86 45,885.57"
+    },
+    {
+      "claim_number": "BFC24-16481",
+      "date_of_loss": "2024-12-30",
+      "status": "open",
+      "paid": 18215.84,
+      "reserved": 4978.73,
+      "incurred": 23194.57,
+      "page": 1,
+      "text": "BFC24-16481 2024-12-30 Laceration, box cutter OPEN 18,215.84 4,978.73 23,194.57"
+    },
+    {
+      "claim_number": "BFC24-18045",
+      "date_of_loss": "2025-01-24",
+      "status": "closed",
+      "paid": 39139.05,
+      "reserved": 0.0,
+      "incurred": 39139.05,
+      "page": 1,
+      "text": "BFC24-18045 2025-01-24 Fall from ladder, knee CLOSED 39,139.05 0.00 39,139.05"
+    },
+    {
+      "claim_number": "BFC24-67893",
+      "date_of_loss": "2025-01-25",
+      "status": "closed",
+      "paid": 41321.1,
+      "reserved": 0.0,
+      "incurred": 41321.1,
+      "page": 1,
+      "text": "BFC24-67893 2025-01-25 Slip on wet floor, wrist sprain CLOSED 41,321.10 0.00 41,321.10"
+    },
+    {
+      "claim_number": "BFC24-27372",
+      "date_of_loss": "2025-02-01",
+      "status": "closed",
+      "paid": 38159.6,
+      "reserved": 0.0,
+      "incurred": 38159.6,
+      "page": 1,
+      "text": "BFC24-27372 2025-02-01 Lifting strain, lower back CLOSED 38,159.60 0.00 38,159.60"
+    },
+    {
+      "claim_number": "BFC24-79672",
+      "date_of_loss": "2025-02-16",
+      "status": "closed",
+      "paid": 10408.77,
+      "reserved": 0.0,
+      "incurred": 10408.77,
+      "page": 2,
+      "text": "BFC24-79672 2025-02-16 Vehicle backing, rear bumper CLOSED 10,408.77 0.00 10,408.77"
+    },
+    {
+      "claim_number": "BFC24-67966",
+      "date_of_loss": "2025-02-19",
+      "status": "open",
+      "paid": 40660.52,
+      "reserved": 4168.25,
+      "incurred": 44828.77,
+      "page": 2,
+      "text": "BFC24-67966 2025-02-19 Laceration, box cutter OPEN 40,660.52 4,168.25 44,828.77"
+    },
+    {
+      "claim_number": "BFC24-60310",
+      "date_of_loss": "2025-02-27",
+      "status": "open",
+      "paid": 31649.69,
+      "reserved": 6073.15,
+      "incurred": 37722.84,
+      "page": 2,
+      "text": "BFC24-60310 2025-02-27 Laceration, box cutter OPEN 31,649.69 6,073.15 37,722.84"
+    },
+    {
+      "claim_number": "BFC24-56597",
+      "date_of_loss": "2025-03-01",
+      "status": "closed",
+      "paid": 36435.29,
+      "reserved": 0.0,
+      "incurred": 36435.29,
+      "page": 2,
+      "text": "BFC24-56597 2025-03-01 Forklift contact, foot CLOSED 36,435.29 0.00 36,435.29"
+    },
+    {
+      "claim_number": "BFC24-69343",
+      "date_of_loss": "2025-03-09",
+      "status": "closed",
+      "paid": 5640.04,
+      "reserved": 0.0,
+      "incurred": 5640.04,
+      "page": 2,
+      "text": "BFC24-69343 2025-03-09 Vehicle backing, rear bumper CLOSED 5,640.04 0.00 5,640.04"
+    },
+    {
+      "claim_number": "BFC24-64756",
+      "date_of_loss": "2025-03-13",
+      "status": "open",
+      "paid": 25061.13,
+      "reserved": 11814.05,
+      "incurred": 36875.18,
+      "page": 2,
+      "text": "BFC24-64756 2025-03-13 Fall from ladder, knee OPEN 25,061.13 11,814.05 36,875.18"
+    },
+    {
+      "claim_number": "BFC24-18923",
+      "date_of_loss": "2025-03-22",
+      "status": "open",
+      "paid": 10346.47,
+      "reserved": 29492.44,
+      "incurred": 39838.91,
+      "page": 2,
+      "text": "BFC24-18923 2025-03-22 Pinch point, conveyor OPEN 10,346.47 29,492.44 39,838.91"
+    },
+    {
+      "claim_number": "BFC24-90676",
+      "date_of_loss": "2025-03-23",
+      "status": "closed",
+      "paid": 24124.34,
+      "reserved": 0.0,
+      "incurred": 24124.34,
+      "page": 2,
+      "text": "BFC24-90676 2025-03-23 Burn, fryer splash CLOSED 24,124.34 0.00 24,124.34"
+    }
+  ]
+}

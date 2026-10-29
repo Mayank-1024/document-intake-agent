@@ -1,0 +1,68 @@
+{
+  "doc_id": "w2-02",
+  "doc_type": "w2",
+  "file": "docs/w2-02.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "standard",
+  "layout": "A",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "tax_year": {
+      "value": 2025,
+      "page": 1,
+      "text": "2025"
+    },
+    "employee_ssn": {
+      "value": "XXX-XX-9415",
+      "page": 1,
+      "text": "XXX-XX-9415"
+    },
+    "employer_ein": {
+      "value": "87-8858025",
+      "page": 1,
+      "text": "87-8858025"
+    },
+    "employer_name": {
+      "value": "Glasswing Pediatrics PLLC",
+      "page": 1,
+      "text": "Glasswing Pediatrics PLLC"
+    },
+    "employee_name": {
+      "value": "Tomasz Castellano",
+      "page": 1,
+      "text": "Tomasz Castellano"
+    },
+    "wages": {
+      "value": 107805.68,
+      "page": 1,
+      "text": "107,805.68"
+    },
+    "federal_income_tax_withheld": {
+      "value": 17258.01,
+      "page": 1,
+      "text": "17,258.01"
+    },
+    "social_security_wages": {
+      "value": 111139.88,
+      "page": 1,
+      "text": "111,139.88"
+    },
+    "social_security_tax_withheld": {
+      "value": 6890.67,
+      "page": 1,
+      "text": "6,890.67"
+    },
+    "medicare_wages": {
+      "value": 111139.88,
+      "page": 1,
+      "text": "111,139.88"
+    },
+    "medicare_tax_withheld": {
+      "value": 1611.53,
+      "page": 1,
+      "text": "1,611.53"
+    }
+  }
+}

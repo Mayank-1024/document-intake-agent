@@ -1,0 +1,68 @@
+{
+  "doc_id": "w2-04",
+  "doc_type": "w2",
+  "file": "docs/w2-04.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "standard",
+  "layout": "A",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "tax_year": {
+      "value": 2025,
+      "page": 1,
+      "text": "2025"
+    },
+    "employee_ssn": {
+      "value": "XXX-XX-3363",
+      "page": 1,
+      "text": "XXX-XX-3363"
+    },
+    "employer_ein": {
+      "value": "94-9857052",
+      "page": 1,
+      "text": "94-9857052"
+    },
+    "employer_name": {
+      "value": "Redfern Mills Bakery Co.",
+      "page": 1,
+      "text": "Redfern Mills Bakery Co."
+    },
+    "employee_name": {
+      "value": "Priya Haddad",
+      "page": 1,
+      "text": "Priya Haddad"
+    },
+    "wages": {
+      "value": 61856.28,
+      "page": 1,
+      "text": "61,856.28"
+    },
+    "federal_income_tax_withheld": {
+      "value": 9543.37,
+      "page": 1,
+      "text": "9,543.37"
+    },
+    "social_security_wages": {
+      "value": 65111.87,
+      "page": 1,
+      "text": "65,111.87"
+    },
+    "social_security_tax_withheld": {
+      "value": 4036.94,
+      "page": 1,
+      "text": "4,036.94"
+    },
+    "medicare_wages": {
+      "value": 65111.87,
+      "page": 1,
+      "text": "65,111.87"
+    },
+    "medicare_tax_withheld": {
+      "value": 944.12,
+      "page": 1,
+      "text": "944.12"
+    }
+  }
+}

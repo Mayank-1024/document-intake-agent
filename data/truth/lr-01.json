@@ -1,0 +1,130 @@
+{
+  "doc_id": "lr-01",
+  "doc_type": "loss_run",
+  "file": "docs/lr-01.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "standard",
+  "layout": "A",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "carrier_name": {
+      "value": "Granite Harbor Mutual Insurance Co.",
+      "page": 1,
+      "text": "Granite Harbor Mutual Insurance Co."
+    },
+    "insured_name": {
+      "value": "Tamberlane Freight Systems Inc.",
+      "page": 1,
+      "text": "Named Insured: Tamberlane Freight Systems Inc."
+    },
+    "policy_number": {
+      "value": "GHM-GL-2024-554080",
+      "page": 1,
+      "text": "Policy Number: GHM-GL-2024-554080"
+    },
+    "policy_period_start": {
+      "value": "2024-10-01",
+      "page": 1,
+      "text": "Policy Period: 10/01/2024 - 10/01/2025"
+    },
+    "policy_period_end": {
+      "value": "2025-10-01",
+      "page": 1,
+      "text": "Policy Period: 10/01/2024 - 10/01/2025"
+    },
+    "valuation_date": {
+      "value": "2026-09-30",
+      "page": 1,
+      "text": "Valuation Date: 09/30/2026"
+    },
+    "total_paid": {
+      "value": 207279.99,
+      "page": 1,
+      "text": "Totals (7 claims) 207,279.99 29,870.92 237,150.91"
+    },
+    "total_reserved": {
+      "value": 29870.92,
+      "page": 1,
+      "text": "Totals (7 claims) 207,279.99 29,870.92 237,150.91"
+    },
+    "total_incurred": {
+      "value": 237150.91,
+      "page": 1,
+      "text": "Totals (7 claims) 207,279.99 29,870.92 237,150.91"
+    }
+  },
+  "claims": [
+    {
+      "claim_number": "GHM24-71268",
+      "date_of_loss": "2025-01-04",
+      "status": "closed",
+      "paid": 35540.38,
+      "reserved": 0.0,
+      "incurred": 35540.38,
+      "page": 1,
+      "text": "GHM24-71268 01/04/2025 Burn, fryer splash Closed 35,540.38 0.00 35,540.38"
+    },
+    {
+      "claim_number": "GHM24-27075",
+      "date_of_loss": "2025-02-09",
+      "status": "closed",
+      "paid": 28987.6,
+      "reserved": 0.0,
+      "incurred": 28987.6,
+      "page": 1,
+      "text": "GHM24-27075 02/09/2025 Slip on wet floor, wrist sprain Closed 28,987.60 0.00 28,987.60"
+    },
+    {
+      "claim_number": "GHM24-34292",
+      "date_of_loss": "2025-04-01",
+      "status": "closed",
+      "paid": 20375.58,
+      "reserved": 0.0,
+      "incurred": 20375.58,
+      "page": 1,
+      "text": "GHM24-34292 04/01/2025 Lifting strain, lower back Closed 20,375.58 0.00 20,375.58"
+    },
+    {
+      "claim_number": "GHM24-95566",
+      "date_of_loss": "2025-05-09",
+      "status": "closed",
+      "paid": 42213.85,
+      "reserved": 0.0,
+      "incurred": 42213.85,
+      "page": 1,
+      "text": "GHM24-95566 05/09/2025 Repetitive motion, shoulder Closed 42,213.85 0.00 42,213.85"
+    },
+    {
+      "claim_number": "GHM24-17783",
+      "date_of_loss": "2025-06-26",
+      "status": "closed",
+      "paid": 36579.54,
+      "reserved": 0.0,
+      "incurred": 36579.54,
+      "page": 1,
+      "text": "GHM24-17783 06/26/2025 Fall from ladder, knee Closed 36,579.54 0.00 36,579.54"
+    },
+    {
+      "claim_number": "GHM24-90715",
+      "date_of_loss": "2025-07-04",
+      "status": "open",
+      "paid": 37764.12,
+      "reserved": 29870.92,
+      "incurred": 67635.04,
+      "page": 1,
+      "text": "GHM24-90715 07/04/2025 Pinch point, conveyor Open 37,764.12 29,870.92 67,635.04"
+    },
+    {
+      "claim_number": "GHM24-18605",
+      "date_of_loss": "2025-07-31",
+      "status": "closed",
+      "paid": 5818.92,
+      "reserved": 0.0,
+      "incurred": 5818.92,
+      "page": 1,
+      "text": "GHM24-18605 07/31/2025 Lifting strain, lower back Closed 5,818.92 0.00 5,818.92"
+    }
+  ]
+}

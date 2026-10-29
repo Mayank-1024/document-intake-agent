@@ -1,0 +1,68 @@
+{
+  "doc_id": "w2-05",
+  "doc_type": "w2",
+  "file": "docs/w2-05.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "missing_field",
+  "layout": "A",
+  "expected_review": true,
+  "expected_reason": "missing_required",
+  "fields": {
+    "tax_year": {
+      "value": 2025,
+      "page": 1,
+      "text": "2025"
+    },
+    "employee_ssn": {
+      "value": "XXX-XX-9627",
+      "page": 1,
+      "text": "XXX-XX-9627"
+    },
+    "employer_ein": {
+      "value": null,
+      "page": null,
+      "text": null
+    },
+    "employer_name": {
+      "value": "Hollis & Vane Landscaping",
+      "page": 1,
+      "text": "Hollis & Vane Landscaping"
+    },
+    "employee_name": {
+      "value": "Theo Okafor",
+      "page": 1,
+      "text": "Theo Okafor"
+    },
+    "wages": {
+      "value": 89011.56,
+      "page": 1,
+      "text": "89,011.56"
+    },
+    "federal_income_tax_withheld": {
+      "value": 8712.0,
+      "page": 1,
+      "text": "8,712.00"
+    },
+    "social_security_wages": {
+      "value": 93696.38,
+      "page": 1,
+      "text": "93,696.38"
+    },
+    "social_security_tax_withheld": {
+      "value": 5809.18,
+      "page": 1,
+      "text": "5,809.18"
+    },
+    "medicare_wages": {
+      "value": 93696.38,
+      "page": 1,
+      "text": "93,696.38"
+    },
+    "medicare_tax_withheld": {
+      "value": 1358.6,
+      "page": 1,
+      "text": "1,358.60"
+    }
+  }
+}

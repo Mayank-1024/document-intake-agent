@@ -1,0 +1,59 @@
+{
+  "doc_id": "lr-07",
+  "doc_type": "loss_run",
+  "file": "docs/lr-07.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "no_claims",
+  "layout": "A",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "carrier_name": {
+      "value": "Northlight Specialty Insurance",
+      "page": 1,
+      "text": "Northlight Specialty Insurance"
+    },
+    "insured_name": {
+      "value": "Tamberlane Freight Systems Inc.",
+      "page": 1,
+      "text": "Named Insured: Tamberlane Freight Systems Inc."
+    },
+    "policy_number": {
+      "value": "NLS-GL-2024-984729",
+      "page": 1,
+      "text": "Policy Number: NLS-GL-2024-984729"
+    },
+    "policy_period_start": {
+      "value": "2024-07-01",
+      "page": 1,
+      "text": "Policy Period: 07/01/2024 - 07/01/2025"
+    },
+    "policy_period_end": {
+      "value": "2025-07-01",
+      "page": 1,
+      "text": "Policy Period: 07/01/2024 - 07/01/2025"
+    },
+    "valuation_date": {
+      "value": "2026-09-30",
+      "page": 1,
+      "text": "Valuation Date: 09/30/2026"
+    },
+    "total_paid": {
+      "value": 0.0,
+      "page": 1,
+      "text": "Totals (0 claims) 0.00 0.00 0.00"
+    },
+    "total_reserved": {
+      "value": 0.0,
+      "page": 1,
+      "text": "Totals (0 claims) 0.00 0.00 0.00"
+    },
+    "total_incurred": {
+      "value": 0.0,
+      "page": 1,
+      "text": "Totals (0 claims) 0.00 0.00 0.00"
+    }
+  },
+  "claims": []
+}

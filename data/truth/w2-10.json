@@ -1,0 +1,68 @@
+{
+  "doc_id": "w2-10",
+  "doc_type": "w2",
+  "file": "docs/w2-10.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "standard",
+  "layout": "A",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "tax_year": {
+      "value": 2025,
+      "page": 1,
+      "text": "2025"
+    },
+    "employee_ssn": {
+      "value": "XXX-XX-9390",
+      "page": 1,
+      "text": "XXX-XX-9390"
+    },
+    "employer_ein": {
+      "value": "97-9586447",
+      "page": 1,
+      "text": "97-9586447"
+    },
+    "employer_name": {
+      "value": "Tamberlane Freight Systems Inc.",
+      "page": 1,
+      "text": "Tamberlane Freight Systems Inc."
+    },
+    "employee_name": {
+      "value": "Dana Brennan",
+      "page": 1,
+      "text": "Dana Brennan"
+    },
+    "wages": {
+      "value": 71401.74,
+      "page": 1,
+      "text": "71,401.74"
+    },
+    "federal_income_tax_withheld": {
+      "value": 10133.12,
+      "page": 1,
+      "text": "10,133.12"
+    },
+    "social_security_wages": {
+      "value": 73610.04,
+      "page": 1,
+      "text": "73,610.04"
+    },
+    "social_security_tax_withheld": {
+      "value": 4563.82,
+      "page": 1,
+      "text": "4,563.82"
+    },
+    "medicare_wages": {
+      "value": 73610.04,
+      "page": 1,
+      "text": "73,610.04"
+    },
+    "medicare_tax_withheld": {
+      "value": 1067.35,
+      "page": 1,
+      "text": "1,067.35"
+    }
+  }
+}

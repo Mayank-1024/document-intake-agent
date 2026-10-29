@@ -1,0 +1,97 @@
+{
+  "doc_id": "inv-01",
+  "doc_type": "invoice",
+  "file": "docs/inv-01.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "standard",
+  "layout": "A",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "vendor_name": {
+      "value": "Ostrander Fasteners Inc.",
+      "page": 1,
+      "text": "Ostrander Fasteners Inc."
+    },
+    "invoice_number": {
+      "value": "INV-24287",
+      "page": 1,
+      "text": "Invoice No.: INV-24287"
+    },
+    "invoice_date": {
+      "value": "2026-02-26",
+      "page": 1,
+      "text": "Invoice Date: 02/26/2026"
+    },
+    "due_date": {
+      "value": "2026-03-28",
+      "page": 1,
+      "text": "Due Date: 03/28/2026"
+    },
+    "payment_terms": {
+      "value": "Net 30",
+      "page": 1,
+      "text": "Terms: Net 30"
+    },
+    "po_number": {
+      "value": "PO-5206",
+      "page": 1,
+      "text": "PO Number: PO-5206"
+    },
+    "customer_name": {
+      "value": "Ashgrove Veterinary Clinic",
+      "page": 1,
+      "text": "Ashgrove Veterinary Clinic"
+    },
+    "subtotal": {
+      "value": 1962.4,
+      "page": 1,
+      "text": "Subtotal $1,962.40"
+    },
+    "tax": {
+      "value": 122.65,
+      "page": 1,
+      "text": "Sales Tax (6.25%) $122.65"
+    },
+    "total": {
+      "value": 2085.05,
+      "page": 1,
+      "text": "Total Due $2,085.05"
+    }
+  },
+  "line_items": [
+    {
+      "description": "Work gloves, leather palm",
+      "quantity": 24,
+      "unit_price": 9.4,
+      "amount": 225.6,
+      "page": 1,
+      "text": "Work gloves, leather palm 24 9.40 225.60"
+    },
+    {
+      "description": "Trash liners 55 gal, case",
+      "quantity": 22,
+      "unit_price": 41.25,
+      "amount": 907.5,
+      "page": 1,
+      "text": "Trash liners 55 gal, case 22 41.25 907.50"
+    },
+    {
+      "description": "Extension cord 25 ft 12 AWG",
+      "quantity": 15,
+      "unit_price": 37.5,
+      "amount": 562.5,
+      "page": 1,
+      "text": "Extension cord 25 ft 12 AWG 15 37.50 562.50"
+    },
+    {
+      "description": "LED tube lamp 4 ft",
+      "quantity": 23,
+      "unit_price": 11.6,
+      "amount": 266.8,
+      "page": 1,
+      "text": "LED tube lamp 4 ft 23 11.60 266.80"
+    }
+  ]
+}

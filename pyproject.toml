@@ -1,0 +1,40 @@
+[project]
+name = "document-intake-agent"
+version = "0.1.0"
+description = "Document intake agent: Claude extracts fields from invoices, W-2s and insurance loss runs with confidence and citations; deterministic checks and a review queue decide what is trusted."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=2.0",
+    "fastapi>=0.115",
+    "pillow>=10.0",
+    "pydantic>=2.8",
+    "pypdf>=5.0",
+    "python-multipart>=0.0.9",
+    "reportlab>=4.0",
+    "uvicorn>=0.30",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.27",
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+extend-exclude = ["ui"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]

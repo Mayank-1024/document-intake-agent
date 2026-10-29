@@ -1,0 +1,121 @@
+{
+  "doc_id": "inv-09",
+  "doc_type": "invoice",
+  "file": "docs/inv-09.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "scanned_pdf",
+  "layout": "A",
+  "expected_review": true,
+  "expected_reason": "no_text_layer",
+  "fields": {
+    "vendor_name": {
+      "value": "Halvorsen Tool & Die Inc.",
+      "page": 1,
+      "text": "Halvorsen Tool & Die Inc."
+    },
+    "invoice_number": {
+      "value": "INV-20221",
+      "page": 1,
+      "text": "Invoice No.: INV-20221"
+    },
+    "invoice_date": {
+      "value": "2026-06-10",
+      "page": 1,
+      "text": "Invoice Date: 06/10/2026"
+    },
+    "due_date": {
+      "value": "2026-07-10",
+      "page": 1,
+      "text": "Due Date: 07/10/2026"
+    },
+    "payment_terms": {
+      "value": "Net 30",
+      "page": 1,
+      "text": "Terms: Net 30"
+    },
+    "po_number": {
+      "value": "PO-5445",
+      "page": 1,
+      "text": "PO Number: PO-5445"
+    },
+    "customer_name": {
+      "value": "Sundial Print Works",
+      "page": 1,
+      "text": "Sundial Print Works"
+    },
+    "subtotal": {
+      "value": 2839.7,
+      "page": 1,
+      "text": "Subtotal $2,839.70"
+    },
+    "tax": {
+      "value": 177.48,
+      "page": 1,
+      "text": "Sales Tax (6.25%) $177.48"
+    },
+    "total": {
+      "value": 3017.18,
+      "page": 1,
+      "text": "Total Due $3,017.18"
+    }
+  },
+  "line_items": [
+    {
+      "description": "Packing tape 2 in, case of 36",
+      "quantity": 10,
+      "unit_price": 64.8,
+      "amount": 648.0,
+      "page": 1,
+      "text": "Packing tape 2 in, case of 36 10 64.80 648.00"
+    },
+    {
+      "description": "Extension cord 25 ft 12 AWG",
+      "quantity": 18,
+      "unit_price": 37.5,
+      "amount": 675.0,
+      "page": 1,
+      "text": "Extension cord 25 ft 12 AWG 18 37.50 675.00"
+    },
+    {
+      "description": "Toner cartridge, black",
+      "quantity": 10,
+      "unit_price": 89.0,
+      "amount": 890.0,
+      "page": 1,
+      "text": "Toner cartridge, black 10 89.00 890.00"
+    },
+    {
+      "description": "Toner cartridge, black",
+      "quantity": 2,
+      "unit_price": 89.0,
+      "amount": 178.0,
+      "page": 1,
+      "text": "Toner cartridge, black 2 89.00 178.00"
+    },
+    {
+      "description": "Extension cord 25 ft 12 AWG",
+      "quantity": 10,
+      "unit_price": 37.5,
+      "amount": 375.0,
+      "page": 1,
+      "text": "Extension cord 25 ft 12 AWG 10 37.50 375.00"
+    },
+    {
+      "description": "Work gloves, leather palm",
+      "quantity": 2,
+      "unit_price": 9.4,
+      "amount": 18.8,
+      "page": 1,
+      "text": "Work gloves, leather palm 2 9.40 18.80"
+    },
+    {
+      "description": "Cable ties 8 in, bag of 500",
+      "quantity": 3,
+      "unit_price": 18.3,
+      "amount": 54.9,
+      "page": 1,
+      "text": "Cable ties 8 in, bag of 500 3 18.30 54.90"
+    }
+  ]
+}

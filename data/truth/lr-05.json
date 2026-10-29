@@ -1,0 +1,130 @@
+{
+  "doc_id": "lr-05",
+  "doc_type": "loss_run",
+  "file": "docs/lr-05.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "variant": "total_mismatch",
+  "layout": "A",
+  "expected_review": true,
+  "expected_reason": "rule_failed",
+  "fields": {
+    "carrier_name": {
+      "value": "Granite Harbor Mutual Insurance Co.",
+      "page": 1,
+      "text": "Granite Harbor Mutual Insurance Co."
+    },
+    "insured_name": {
+      "value": "Larkspur Dental Group",
+      "page": 1,
+      "text": "Named Insured: Larkspur Dental Group"
+    },
+    "policy_number": {
+      "value": "GHM-WC-2024-837727",
+      "page": 1,
+      "text": "Policy Number: GHM-WC-2024-837727"
+    },
+    "policy_period_start": {
+      "value": "2024-04-01",
+      "page": 1,
+      "text": "Policy Period: 04/01/2024 - 04/01/2025"
+    },
+    "policy_period_end": {
+      "value": "2025-04-01",
+      "page": 1,
+      "text": "Policy Period: 04/01/2024 - 04/01/2025"
+    },
+    "valuation_date": {
+      "value": "2026-09-30",
+      "page": 1,
+      "text": "Valuation Date: 09/30/2026"
+    },
+    "total_paid": {
+      "value": 224777.67,
+      "page": 1,
+      "text": "Totals (7 claims) 224,777.67 81,692.86 311,470.53"
+    },
+    "total_reserved": {
+      "value": 81692.86,
+      "page": 1,
+      "text": "Totals (7 claims) 224,777.67 81,692.86 311,470.53"
+    },
+    "total_incurred": {
+      "value": 311470.53,
+      "page": 1,
+      "text": "Totals (7 claims) 224,777.67 81,692.86 311,470.53"
+    }
+  },
+  "claims": [
+    {
+      "claim_number": "GHM24-91142",
+      "date_of_loss": "2024-04-19",
+      "status": "closed",
+      "paid": 47177.59,
+      "reserved": 0.0,
+      "incurred": 47177.59,
+      "page": 1,
+      "text": "GHM24-91142 04/19/2024 Customer trip, parking lot Closed 47,177.59 0.00 47,177.59"
+    },
+    {
+      "claim_number": "GHM24-30040",
+      "date_of_loss": "2024-07-02",
+      "status": "closed",
+      "paid": 10361.68,
+      "reserved": 0.0,
+      "incurred": 10361.68,
+      "page": 1,
+      "text": "GHM24-30040 07/02/2024 Slip on wet floor, wrist sprain Closed 10,361.68 0.00 10,361.68"
+    },
+    {
+      "claim_number": "GHM24-18124",
+      "date_of_loss": "2024-07-08",
+      "status": "open",
+      "paid": 24812.51,
+      "reserved": 29226.86,
+      "incurred": 54039.37,
+      "page": 1,
+      "text": "GHM24-18124 07/08/2024 Slip on wet floor, wrist sprain Open 24,812.51 29,226.86 54,039.37"
+    },
+    {
+      "claim_number": "GHM24-27824",
+      "date_of_loss": "2024-10-07",
+      "status": "open",
+      "paid": 44208.64,
+      "reserved": 2727.47,
+      "incurred": 46936.11,
+      "page": 1,
+      "text": "GHM24-27824 10/07/2024 Forklift contact, foot Open 44,208.64 2,727.47 46,936.11"
+    },
+    {
+      "claim_number": "GHM24-23279",
+      "date_of_loss": "2024-11-05",
+      "status": "open",
+      "paid": 12239.07,
+      "reserved": 26439.51,
+      "incurred": 38678.58,
+      "page": 1,
+      "text": "GHM24-23279 11/05/2024 Vehicle backing, rear bumper Open 12,239.07 26,439.51 38,678.58"
+    },
+    {
+      "claim_number": "GHM24-13352",
+      "date_of_loss": "2025-01-13",
+      "status": "open",
+      "paid": 43780.89,
+      "reserved": 23299.02,
+      "incurred": 67079.91,
+      "page": 1,
+      "text": "GHM24-13352 01/13/2025 Customer trip, parking lot Open 43,780.89 23,299.02 67,079.91"
+    },
+    {
+      "claim_number": "GHM24-44806",
+      "date_of_loss": "2025-02-26",
+      "status": "closed",
+      "paid": 42197.29,
+      "reserved": 0.0,
+      "incurred": 42197.29,
+      "page": 1,
+      "text": "GHM24-44806 02/26/2025 Customer trip, parking lot Closed 42,197.29 0.00 42,197.29"
+    }
+  ]
+}
