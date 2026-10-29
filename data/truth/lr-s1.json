@@ -1,0 +1,131 @@
+{
+  "doc_id": "lr-s1",
+  "doc_type": "loss_run",
+  "file": "docs/lr-s1.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "split": "stress",
+  "variant": "split_paid_columns",
+  "layout": "A",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "carrier_name": {
+      "value": "Granite Harbor Mutual Insurance Co.",
+      "page": 1,
+      "text": "Granite Harbor Mutual Insurance Co."
+    },
+    "insured_name": {
+      "value": "Hollis & Vane Landscaping",
+      "page": 1,
+      "text": "Named Insured: Hollis & Vane Landscaping"
+    },
+    "policy_number": {
+      "value": "GHM-CA-2024-248625",
+      "page": 1,
+      "text": "Policy Number: GHM-CA-2024-248625"
+    },
+    "policy_period_start": {
+      "value": "2024-04-01",
+      "page": 1,
+      "text": "Policy Period: 04/01/2024 - 04/01/2025"
+    },
+    "policy_period_end": {
+      "value": "2025-04-01",
+      "page": 1,
+      "text": "Policy Period: 04/01/2024 - 04/01/2025"
+    },
+    "valuation_date": {
+      "value": "2026-09-30",
+      "page": 1,
+      "text": "Valuation Date: 09/30/2026"
+    },
+    "total_paid": {
+      "value": 139652.45,
+      "page": 1,
+      "text": "Totals (7 claims) 103,958.68 35,693.77 139,652.45 60,279.82 199,932.27"
+    },
+    "total_reserved": {
+      "value": 60279.82,
+      "page": 1,
+      "text": "Totals (7 claims) 103,958.68 35,693.77 139,652.45 60,279.82 199,932.27"
+    },
+    "total_incurred": {
+      "value": 199932.27,
+      "page": 1,
+      "text": "Totals (7 claims) 103,958.68 35,693.77 139,652.45 60,279.82 199,932.27"
+    }
+  },
+  "claims": [
+    {
+      "claim_number": "GHM24-18512",
+      "date_of_loss": "2024-05-12",
+      "status": "open",
+      "paid": 9469.3,
+      "reserved": 3325.09,
+      "incurred": 12794.39,
+      "page": 1,
+      "text": "GHM24-18512 05/12/2024 Open 6,269.63 3,199.67 9,469.30 3,325.09 12,794.39"
+    },
+    {
+      "claim_number": "GHM24-12514",
+      "date_of_loss": "2024-06-30",
+      "status": "open",
+      "paid": 44973.04,
+      "reserved": 28652.63,
+      "incurred": 73625.67,
+      "page": 1,
+      "text": "GHM24-12514 06/30/2024 Open 31,155.23 13,817.81 44,973.04 28,652.63 73,625.67"
+    },
+    {
+      "claim_number": "GHM24-81745",
+      "date_of_loss": "2024-07-06",
+      "status": "open",
+      "paid": 40336.59,
+      "reserved": 24623.58,
+      "incurred": 64960.17,
+      "page": 1,
+      "text": "GHM24-81745 07/06/2024 Open 30,044.19 10,292.40 40,336.59 24,623.58 64,960.17"
+    },
+    {
+      "claim_number": "GHM24-87893",
+      "date_of_loss": "2024-08-11",
+      "status": "open",
+      "paid": 7796.66,
+      "reserved": 3678.52,
+      "incurred": 11475.18,
+      "page": 1,
+      "text": "GHM24-87893 08/11/2024 Open 6,932.74 863.92 7,796.66 3,678.52 11,475.18"
+    },
+    {
+      "claim_number": "GHM24-43863",
+      "date_of_loss": "2024-12-07",
+      "status": "closed",
+      "paid": 27726.05,
+      "reserved": 0.0,
+      "incurred": 27726.05,
+      "page": 1,
+      "text": "GHM24-43863 12/07/2024 Closed 21,970.74 5,755.31 27,726.05 0.00 27,726.05"
+    },
+    {
+      "claim_number": "GHM24-30841",
+      "date_of_loss": "2024-12-31",
+      "status": "closed",
+      "paid": 8601.03,
+      "reserved": 0.0,
+      "incurred": 8601.03,
+      "page": 1,
+      "text": "GHM24-30841 12/31/2024 Closed 7,009.22 1,591.81 8,601.03 0.00 8,601.03"
+    },
+    {
+      "claim_number": "GHM24-39057",
+      "date_of_loss": "2025-01-16",
+      "status": "closed",
+      "paid": 749.78,
+      "reserved": 0.0,
+      "incurred": 749.78,
+      "page": 1,
+      "text": "GHM24-39057 01/16/2025 Closed 576.93 172.85 749.78 0.00 749.78"
+    }
+  ]
+}

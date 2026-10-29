@@ -12,7 +12,7 @@ from tests.conftest import good_answer
 
 @pytest.fixture(scope="module")
 def offline():
-    return run(load_cases(), "offline", "scripted", threshold=0.9)
+    return run(load_cases(split="core"), "offline", "scripted", threshold=0.9)
 
 
 def test_offline_run_accounts_for_every_injected_fault(offline):

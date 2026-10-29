@@ -4,6 +4,7 @@
   "file": "docs/lr-07.pdf",
   "media_type": "application/pdf",
   "pages": 1,
+  "split": "core",
   "variant": "no_claims",
   "layout": "A",
   "expected_review": false,

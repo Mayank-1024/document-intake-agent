@@ -4,6 +4,7 @@
   "file": "docs/lr-06.pdf",
   "media_type": "application/pdf",
   "pages": 1,
+  "split": "core",
   "variant": "date_out_of_period",
   "layout": "B",
   "expected_review": true,

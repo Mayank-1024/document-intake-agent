@@ -1,0 +1,69 @@
+{
+  "doc_id": "w2-s2",
+  "doc_type": "w2",
+  "file": "docs/w2-s2.jpg",
+  "media_type": "image/jpeg",
+  "pages": 1,
+  "split": "stress",
+  "variant": "degraded_scan_jpeg",
+  "layout": "A",
+  "expected_review": true,
+  "expected_reason": "no_text_layer",
+  "fields": {
+    "tax_year": {
+      "value": 2025,
+      "page": 1,
+      "text": "2025"
+    },
+    "employee_ssn": {
+      "value": "XXX-XX-1330",
+      "page": 1,
+      "text": "XXX-XX-1330"
+    },
+    "employer_ein": {
+      "value": "92-4934562",
+      "page": 1,
+      "text": "92-4934562"
+    },
+    "employer_name": {
+      "value": "Northmere Software Labs LLC",
+      "page": 1,
+      "text": "Northmere Software Labs LLC"
+    },
+    "employee_name": {
+      "value": "Theo Varga",
+      "page": 1,
+      "text": "Theo Varga"
+    },
+    "wages": {
+      "value": 79356.15,
+      "page": 1,
+      "text": "79,356.15"
+    },
+    "federal_income_tax_withheld": {
+      "value": 9859.57,
+      "page": 1,
+      "text": "9,859.57"
+    },
+    "social_security_wages": {
+      "value": 79356.15,
+      "page": 1,
+      "text": "79,356.15"
+    },
+    "social_security_tax_withheld": {
+      "value": 4920.08,
+      "page": 1,
+      "text": "4,920.08"
+    },
+    "medicare_wages": {
+      "value": 79356.15,
+      "page": 1,
+      "text": "79,356.15"
+    },
+    "medicare_tax_withheld": {
+      "value": 1150.66,
+      "page": 1,
+      "text": "1,150.66"
+    }
+  }
+}

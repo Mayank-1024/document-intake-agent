@@ -23,7 +23,7 @@ def _table(headers: list[str], rows: list[list[Any]]) -> str:
 def render_markdown(p: dict[str, Any]) -> str:
     s = p["summary"]
     r, e = s["routing"], s["errors"]
-    out = [f"# Eval report: {p['mode']} / {p['model']}", "",
+    out = [f"# Eval report: {p['mode']} / {p['model']} / split {p.get('split', 'all')}", "",
            f"Generated {p['generated_at']} (UTC). Confidence threshold {s['threshold']}.", "",
            f"> {p['disclaimer']}", ""]
     if p.get("injected_faults"):
@@ -64,7 +64,8 @@ def render_markdown(p: dict[str, Any]) -> str:
 
     out += ["## Field accuracy", "",
             _table(["Slice", "Accuracy"],
-                   [[f"type: {k}", _pct(v)] for k, v in s["accuracy_by_doc_type"].items()]
+                   [[f"split: {k}", _pct(v)] for k, v in s["accuracy_by_split"].items()]
+                   + [[f"type: {k}", _pct(v)] for k, v in s["accuracy_by_doc_type"].items()]
                    + [[f"variant: {k}", _pct(v)] for k, v in s["accuracy_by_variant"].items()]
                    + [["fields in auto-accepted docs", _pct(s["accuracy_by_route"]["auto_accept"])],
                       ["fields in review docs", _pct(s["accuracy_by_route"]["needs_review"])],

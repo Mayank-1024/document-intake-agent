@@ -67,8 +67,8 @@ class _RowBase(_Strict):
 class InvoiceLineItem(_RowBase):
     description: str
     quantity: float
-    unit_price: float
-    amount: float
+    unit_price: float = Field(description="Negative for a discount or credit line.")
+    amount: float = Field(description="Line amount; negative for a discount or credit line.")
 
 
 class InvoiceExtraction(_Strict):
@@ -80,9 +80,11 @@ class InvoiceExtraction(_Strict):
     payment_terms: CitedText = Field(description="For example 'Net 30', as printed.")
     po_number: CitedText = Field(description="Customer purchase order number, if printed.")
     line_items: list[InvoiceLineItem] = Field(description="Every line item, in document order.")
-    subtotal: CitedMoney
+    subtotal: CitedMoney = Field(description="Invoice subtotal (not a per-page subtotal).")
     tax: CitedMoney
-    total: CitedMoney = Field(description="Total / amount due exactly as printed. Do not compute.")
+    total: CitedMoney = Field(description=(
+        "Invoice total as printed (subtotal plus tax). If a deposit or payment is subtracted "
+        "below it, still report the invoice total, not the remaining balance. Do not compute."))
 
 
 # ---------------------------------------------------------------- W-2
@@ -118,7 +120,9 @@ class LossRunClaim(_RowBase):
     claim_number: str
     date_of_loss: date
     status: Literal["open", "closed"]
-    paid: float
+    paid: float = Field(description=(
+        "Total paid on the claim. If paid is split into categories (indemnity, expense), "
+        "use the printed total paid column."))
     reserved: float = Field(description="Outstanding reserve.")
     incurred: float = Field(description="Total incurred as printed for the claim.")
 

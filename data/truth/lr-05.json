@@ -4,6 +4,7 @@
   "file": "docs/lr-05.pdf",
   "media_type": "application/pdf",
   "pages": 1,
+  "split": "core",
   "variant": "total_mismatch",
   "layout": "A",
   "expected_review": true,

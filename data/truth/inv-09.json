@@ -4,6 +4,7 @@
   "file": "docs/inv-09.pdf",
   "media_type": "application/pdf",
   "pages": 1,
+  "split": "core",
   "variant": "scanned_pdf",
   "layout": "A",
   "expected_review": true,

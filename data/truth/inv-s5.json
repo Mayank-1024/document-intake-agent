@@ -1,0 +1,274 @@
+{
+  "doc_id": "inv-s5",
+  "doc_type": "invoice",
+  "file": "docs/inv-s5.pdf",
+  "media_type": "application/pdf",
+  "pages": 2,
+  "split": "stress",
+  "variant": "page_subtotal",
+  "layout": "A",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "vendor_name": {
+      "value": "Ostrander Fasteners Inc.",
+      "page": 1,
+      "text": "Ostrander Fasteners Inc."
+    },
+    "invoice_number": {
+      "value": "INV-21536",
+      "page": 1,
+      "text": "Invoice No.: INV-21536"
+    },
+    "invoice_date": {
+      "value": "2026-03-17",
+      "page": 1,
+      "text": "Invoice Date: 03/17/2026"
+    },
+    "due_date": {
+      "value": "2026-04-16",
+      "page": 1,
+      "text": "Due Date: 04/16/2026"
+    },
+    "payment_terms": {
+      "value": "Net 30",
+      "page": 1,
+      "text": "Terms: Net 30"
+    },
+    "po_number": {
+      "value": "PO-8799",
+      "page": 1,
+      "text": "PO Number: PO-8799"
+    },
+    "customer_name": {
+      "value": "Quarry Lane Builders LLC",
+      "page": 1,
+      "text": "Quarry Lane Builders LLC"
+    },
+    "subtotal": {
+      "value": 9625.97,
+      "page": 2,
+      "text": "Subtotal $9,625.97"
+    },
+    "tax": {
+      "value": 601.62,
+      "page": 2,
+      "text": "Sales Tax (6.25%) $601.62"
+    },
+    "total": {
+      "value": 10227.59,
+      "page": 2,
+      "text": "Total Due $10,227.59"
+    }
+  },
+  "line_items": [
+    {
+      "description": "Nitrile gloves, box of 100",
+      "quantity": 12,
+      "unit_price": 8.75,
+      "amount": 105.0,
+      "page": 1,
+      "text": "Nitrile gloves, box of 100 12 8.75 105.00"
+    },
+    {
+      "description": "Floor cleaner concentrate 1 gal",
+      "quantity": 12,
+      "unit_price": 23.85,
+      "amount": 286.2,
+      "page": 1,
+      "text": "Floor cleaner concentrate 1 gal 12 23.85 286.20"
+    },
+    {
+      "description": "Machine screw kit",
+      "quantity": 11,
+      "unit_price": 19.99,
+      "amount": 219.89,
+      "page": 1,
+      "text": "Machine screw kit 11 19.99 219.89"
+    },
+    {
+      "description": "Work gloves, leather palm",
+      "quantity": 18,
+      "unit_price": 9.4,
+      "amount": 169.2,
+      "page": 1,
+      "text": "Work gloves, leather palm 18 9.40 169.20"
+    },
+    {
+      "description": "Wire nuts assorted, jar",
+      "quantity": 7,
+      "unit_price": 12.15,
+      "amount": 85.05,
+      "page": 1,
+      "text": "Wire nuts assorted, jar 7 12.15 85.05"
+    },
+    {
+      "description": "Trash liners 55 gal, case",
+      "quantity": 13,
+      "unit_price": 41.25,
+      "amount": 536.25,
+      "page": 1,
+      "text": "Trash liners 55 gal, case 13 41.25 536.25"
+    },
+    {
+      "description": "Work gloves, leather palm",
+      "quantity": 3,
+      "unit_price": 9.4,
+      "amount": 28.2,
+      "page": 1,
+      "text": "Work gloves, leather palm 3 9.40 28.20"
+    },
+    {
+      "description": "Extension cord 25 ft 12 AWG",
+      "quantity": 21,
+      "unit_price": 37.5,
+      "amount": 787.5,
+      "page": 1,
+      "text": "Extension cord 25 ft 12 AWG 21 37.50 787.50"
+    },
+    {
+      "description": "Machine screw kit",
+      "quantity": 13,
+      "unit_price": 19.99,
+      "amount": 259.87,
+      "page": 1,
+      "text": "Machine screw kit 13 19.99 259.87"
+    },
+    {
+      "description": "Wire nuts assorted, jar",
+      "quantity": 13,
+      "unit_price": 12.15,
+      "amount": 157.95,
+      "page": 1,
+      "text": "Wire nuts assorted, jar 13 12.15 157.95"
+    },
+    {
+      "description": "Shop towels, case of 12 rolls",
+      "quantity": 3,
+      "unit_price": 31.4,
+      "amount": 94.2,
+      "page": 1,
+      "text": "Shop towels, case of 12 rolls 3 31.40 94.20"
+    },
+    {
+      "description": "LED tube lamp 4 ft",
+      "quantity": 19,
+      "unit_price": 11.6,
+      "amount": 220.4,
+      "page": 1,
+      "text": "LED tube lamp 4 ft 19 11.60 220.40"
+    },
+    {
+      "description": "Machine screw kit",
+      "quantity": 4,
+      "unit_price": 19.99,
+      "amount": 79.96,
+      "page": 1,
+      "text": "Machine screw kit 4 19.99 79.96"
+    },
+    {
+      "description": "Work gloves, leather palm",
+      "quantity": 13,
+      "unit_price": 9.4,
+      "amount": 122.2,
+      "page": 1,
+      "text": "Work gloves, leather palm 13 9.40 122.20"
+    },
+    {
+      "description": "Stretch wrap 18 in x 1500 ft",
+      "quantity": 22,
+      "unit_price": 27.95,
+      "amount": 614.9,
+      "page": 1,
+      "text": "Stretch wrap 18 in x 1500 ft 22 27.95 614.90"
+    },
+    {
+      "description": "Wire nuts assorted, jar",
+      "quantity": 17,
+      "unit_price": 12.15,
+      "amount": 206.55,
+      "page": 1,
+      "text": "Wire nuts assorted, jar 17 12.15 206.55"
+    },
+    {
+      "description": "Extension cord 25 ft 12 AWG",
+      "quantity": 15,
+      "unit_price": 37.5,
+      "amount": 562.5,
+      "page": 1,
+      "text": "Extension cord 25 ft 12 AWG 15 37.50 562.50"
+    },
+    {
+      "description": "Safety glasses, clear lens",
+      "quantity": 14,
+      "unit_price": 4.95,
+      "amount": 69.3,
+      "page": 1,
+      "text": "Safety glasses, clear lens 14 4.95 69.30"
+    },
+    {
+      "description": "Toner cartridge, black",
+      "quantity": 20,
+      "unit_price": 89.0,
+      "amount": 1780.0,
+      "page": 2,
+      "text": "Toner cartridge, black 20 89.00 1,780.00"
+    },
+    {
+      "description": "Stretch wrap 18 in x 1500 ft",
+      "quantity": 23,
+      "unit_price": 27.95,
+      "amount": 642.85,
+      "page": 2,
+      "text": "Stretch wrap 18 in x 1500 ft 23 27.95 642.85"
+    },
+    {
+      "description": "Cable ties 8 in, bag of 500",
+      "quantity": 4,
+      "unit_price": 18.3,
+      "amount": 73.2,
+      "page": 2,
+      "text": "Cable ties 8 in, bag of 500 4 18.30 73.20"
+    },
+    {
+      "description": "Packing tape 2 in, case of 36",
+      "quantity": 6,
+      "unit_price": 64.8,
+      "amount": 388.8,
+      "page": 2,
+      "text": "Packing tape 2 in, case of 36 6 64.80 388.80"
+    },
+    {
+      "description": "Nitrile gloves, box of 100",
+      "quantity": 15,
+      "unit_price": 8.75,
+      "amount": 131.25,
+      "page": 2,
+      "text": "Nitrile gloves, box of 100 15 8.75 131.25"
+    },
+    {
+      "description": "Wire nuts assorted, jar",
+      "quantity": 19,
+      "unit_price": 12.15,
+      "amount": 230.85,
+      "page": 2,
+      "text": "Wire nuts assorted, jar 19 12.15 230.85"
+    },
+    {
+      "description": "Wire nuts assorted, jar",
+      "quantity": 18,
+      "unit_price": 12.15,
+      "amount": 218.7,
+      "page": 2,
+      "text": "Wire nuts assorted, jar 18 12.15 218.70"
+    },
+    {
+      "description": "Packing tape 2 in, case of 36",
+      "quantity": 24,
+      "unit_price": 64.8,
+      "amount": 1555.2,
+      "page": 2,
+      "text": "Packing tape 2 in, case of 36 24 64.80 1,555.20"
+    }
+  ]
+}

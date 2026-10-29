@@ -1,0 +1,130 @@
+{
+  "doc_id": "inv-s4",
+  "doc_type": "invoice",
+  "file": "docs/inv-s4.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "split": "stress",
+  "variant": "discount_line",
+  "layout": "B",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "vendor_name": {
+      "value": "Brightwater Industrial Supply LLC",
+      "page": 1,
+      "text": "Brightwater Industrial Supply LLC"
+    },
+    "invoice_number": {
+      "value": "B348935",
+      "page": 1,
+      "text": "Bill Number: B348935"
+    },
+    "invoice_date": {
+      "value": "2026-03-01",
+      "page": 1,
+      "text": "Date Issued: March 1, 2026"
+    },
+    "due_date": {
+      "value": "2026-04-15",
+      "page": 1,
+      "text": "Payment Due: April 15, 2026"
+    },
+    "payment_terms": {
+      "value": "Net 45",
+      "page": 1,
+      "text": "Terms: Net 45"
+    },
+    "po_number": {
+      "value": "PO-8450",
+      "page": 1,
+      "text": "Customer PO: PO-8450"
+    },
+    "customer_name": {
+      "value": "Sundial Print Works",
+      "page": 1,
+      "text": "Sundial Print Works"
+    },
+    "subtotal": {
+      "value": 3399.06,
+      "page": 1,
+      "text": "Subtotal $3,399.06"
+    },
+    "tax": {
+      "value": 212.44,
+      "page": 1,
+      "text": "Sales Tax (6.25%) $212.44"
+    },
+    "total": {
+      "value": 3611.5,
+      "page": 1,
+      "text": "Amount Due $3,611.50"
+    }
+  },
+  "line_items": [
+    {
+      "description": "Copy paper, 10-ream case",
+      "quantity": 17,
+      "unit_price": 52.0,
+      "amount": 884.0,
+      "page": 1,
+      "text": "Copy paper, 10-ream case 17 52.00 884.00"
+    },
+    {
+      "description": "Machine screw kit",
+      "quantity": 24,
+      "unit_price": 19.99,
+      "amount": 479.76,
+      "page": 1,
+      "text": "Machine screw kit 24 19.99 479.76"
+    },
+    {
+      "description": "Stretch wrap 18 in x 1500 ft",
+      "quantity": 23,
+      "unit_price": 27.95,
+      "amount": 642.85,
+      "page": 1,
+      "text": "Stretch wrap 18 in x 1500 ft 23 27.95 642.85"
+    },
+    {
+      "description": "Packing tape 2 in, case of 36",
+      "quantity": 12,
+      "unit_price": 64.8,
+      "amount": 777.6,
+      "page": 1,
+      "text": "Packing tape 2 in, case of 36 12 64.80 777.60"
+    },
+    {
+      "description": "Stretch wrap 18 in x 1500 ft",
+      "quantity": 2,
+      "unit_price": 27.95,
+      "amount": 55.9,
+      "page": 1,
+      "text": "Stretch wrap 18 in x 1500 ft 2 27.95 55.90"
+    },
+    {
+      "description": "Extension cord 25 ft 12 AWG",
+      "quantity": 15,
+      "unit_price": 37.5,
+      "amount": 562.5,
+      "page": 1,
+      "text": "Extension cord 25 ft 12 AWG 15 37.50 562.50"
+    },
+    {
+      "description": "Wire nuts assorted, jar",
+      "quantity": 3,
+      "unit_price": 12.15,
+      "amount": 36.45,
+      "page": 1,
+      "text": "Wire nuts assorted, jar 3 12.15 36.45"
+    },
+    {
+      "description": "Loyalty discount",
+      "quantity": 1,
+      "unit_price": -40.0,
+      "amount": -40.0,
+      "page": 1,
+      "text": "Loyalty discount 1 (40.00) (40.00)"
+    }
+  ]
+}

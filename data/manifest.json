@@ -3,6 +3,7 @@
     "doc_id": "inv-01",
     "doc_type": "invoice",
     "file": "docs/inv-01.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -10,6 +11,7 @@
     "doc_id": "inv-02",
     "doc_type": "invoice",
     "file": "docs/inv-02.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -17,6 +19,7 @@
     "doc_id": "inv-03",
     "doc_type": "invoice",
     "file": "docs/inv-03.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -24,6 +27,7 @@
     "doc_id": "inv-04",
     "doc_type": "invoice",
     "file": "docs/inv-04.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -31,6 +35,7 @@
     "doc_id": "inv-05",
     "doc_type": "invoice",
     "file": "docs/inv-05.pdf",
+    "split": "core",
     "variant": "two_page",
     "expected_review": false
   },
@@ -38,6 +43,7 @@
     "doc_id": "inv-06",
     "doc_type": "invoice",
     "file": "docs/inv-06.pdf",
+    "split": "core",
     "variant": "total_mismatch",
     "expected_review": true
   },
@@ -45,6 +51,7 @@
     "doc_id": "inv-07",
     "doc_type": "invoice",
     "file": "docs/inv-07.pdf",
+    "split": "core",
     "variant": "missing_field",
     "expected_review": true
   },
@@ -52,6 +59,7 @@
     "doc_id": "inv-08",
     "doc_type": "invoice",
     "file": "docs/inv-08.png",
+    "split": "core",
     "variant": "scanned_png",
     "expected_review": true
   },
@@ -59,6 +67,7 @@
     "doc_id": "inv-09",
     "doc_type": "invoice",
     "file": "docs/inv-09.pdf",
+    "split": "core",
     "variant": "scanned_pdf",
     "expected_review": true
   },
@@ -66,6 +75,7 @@
     "doc_id": "inv-10",
     "doc_type": "invoice",
     "file": "docs/inv-10.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -73,6 +83,7 @@
     "doc_id": "w2-01",
     "doc_type": "w2",
     "file": "docs/w2-01.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -80,6 +91,7 @@
     "doc_id": "w2-02",
     "doc_type": "w2",
     "file": "docs/w2-02.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -87,6 +99,7 @@
     "doc_id": "w2-03",
     "doc_type": "w2",
     "file": "docs/w2-03.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -94,6 +107,7 @@
     "doc_id": "w2-04",
     "doc_type": "w2",
     "file": "docs/w2-04.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -101,6 +115,7 @@
     "doc_id": "w2-05",
     "doc_type": "w2",
     "file": "docs/w2-05.pdf",
+    "split": "core",
     "variant": "missing_field",
     "expected_review": true
   },
@@ -108,6 +123,7 @@
     "doc_id": "w2-06",
     "doc_type": "w2",
     "file": "docs/w2-06.pdf",
+    "split": "core",
     "variant": "ss_tax_mismatch",
     "expected_review": true
   },
@@ -115,6 +131,7 @@
     "doc_id": "w2-07",
     "doc_type": "w2",
     "file": "docs/w2-07.png",
+    "split": "core",
     "variant": "scanned_png",
     "expected_review": true
   },
@@ -122,6 +139,7 @@
     "doc_id": "w2-08",
     "doc_type": "w2",
     "file": "docs/w2-08.pdf",
+    "split": "core",
     "variant": "scanned_pdf",
     "expected_review": true
   },
@@ -129,6 +147,7 @@
     "doc_id": "w2-09",
     "doc_type": "w2",
     "file": "docs/w2-09.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -136,6 +155,7 @@
     "doc_id": "w2-10",
     "doc_type": "w2",
     "file": "docs/w2-10.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -143,6 +163,7 @@
     "doc_id": "lr-01",
     "doc_type": "loss_run",
     "file": "docs/lr-01.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -150,6 +171,7 @@
     "doc_id": "lr-02",
     "doc_type": "loss_run",
     "file": "docs/lr-02.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -157,6 +179,7 @@
     "doc_id": "lr-03",
     "doc_type": "loss_run",
     "file": "docs/lr-03.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
   },
@@ -164,6 +187,7 @@
     "doc_id": "lr-04",
     "doc_type": "loss_run",
     "file": "docs/lr-04.pdf",
+    "split": "core",
     "variant": "two_page",
     "expected_review": false
   },
@@ -171,6 +195,7 @@
     "doc_id": "lr-05",
     "doc_type": "loss_run",
     "file": "docs/lr-05.pdf",
+    "split": "core",
     "variant": "total_mismatch",
     "expected_review": true
   },
@@ -178,6 +203,7 @@
     "doc_id": "lr-06",
     "doc_type": "loss_run",
     "file": "docs/lr-06.pdf",
+    "split": "core",
     "variant": "date_out_of_period",
     "expected_review": true
   },
@@ -185,6 +211,7 @@
     "doc_id": "lr-07",
     "doc_type": "loss_run",
     "file": "docs/lr-07.pdf",
+    "split": "core",
     "variant": "no_claims",
     "expected_review": false
   },
@@ -192,6 +219,7 @@
     "doc_id": "lr-08",
     "doc_type": "loss_run",
     "file": "docs/lr-08.png",
+    "split": "core",
     "variant": "scanned_png",
     "expected_review": true
   },
@@ -199,6 +227,7 @@
     "doc_id": "lr-09",
     "doc_type": "loss_run",
     "file": "docs/lr-09.pdf",
+    "split": "core",
     "variant": "scanned_pdf",
     "expected_review": true
   },
@@ -206,7 +235,80 @@
     "doc_id": "lr-10",
     "doc_type": "loss_run",
     "file": "docs/lr-10.pdf",
+    "split": "core",
     "variant": "standard",
     "expected_review": false
+  },
+  {
+    "doc_id": "inv-s1",
+    "doc_type": "invoice",
+    "file": "docs/inv-s1.pdf",
+    "split": "stress",
+    "variant": "ship_to_distractor",
+    "expected_review": false
+  },
+  {
+    "doc_id": "inv-s2",
+    "doc_type": "invoice",
+    "file": "docs/inv-s2.pdf",
+    "split": "stress",
+    "variant": "deposit_balance_due",
+    "expected_review": false
+  },
+  {
+    "doc_id": "inv-s3",
+    "doc_type": "invoice",
+    "file": "docs/inv-s3.jpg",
+    "split": "stress",
+    "variant": "degraded_scan_jpeg",
+    "expected_review": true
+  },
+  {
+    "doc_id": "inv-s4",
+    "doc_type": "invoice",
+    "file": "docs/inv-s4.pdf",
+    "split": "stress",
+    "variant": "discount_line",
+    "expected_review": false
+  },
+  {
+    "doc_id": "inv-s5",
+    "doc_type": "invoice",
+    "file": "docs/inv-s5.pdf",
+    "split": "stress",
+    "variant": "page_subtotal",
+    "expected_review": false
+  },
+  {
+    "doc_id": "w2-s1",
+    "doc_type": "w2",
+    "file": "docs/w2-s1.pdf",
+    "split": "stress",
+    "variant": "high_earner",
+    "expected_review": false
+  },
+  {
+    "doc_id": "w2-s2",
+    "doc_type": "w2",
+    "file": "docs/w2-s2.jpg",
+    "split": "stress",
+    "variant": "degraded_scan_jpeg",
+    "expected_review": true
+  },
+  {
+    "doc_id": "lr-s1",
+    "doc_type": "loss_run",
+    "file": "docs/lr-s1.pdf",
+    "split": "stress",
+    "variant": "split_paid_columns",
+    "expected_review": false
+  },
+  {
+    "doc_id": "lr-s2",
+    "doc_type": "loss_run",
+    "file": "docs/lr-s2.pdf",
+    "split": "stress",
+    "variant": "degraded_scan_two_page",
+    "expected_review": true
   }
 ]

@@ -4,6 +4,7 @@
   "file": "docs/w2-07.png",
   "media_type": "image/png",
   "pages": 1,
+  "split": "core",
   "variant": "scanned_png",
   "layout": "A",
   "expected_review": true,

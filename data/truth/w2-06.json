@@ -4,6 +4,7 @@
   "file": "docs/w2-06.pdf",
   "media_type": "application/pdf",
   "pages": 1,
+  "split": "core",
   "variant": "ss_tax_mismatch",
   "layout": "A",
   "expected_review": true,

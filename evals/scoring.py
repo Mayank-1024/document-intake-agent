@@ -136,6 +136,7 @@ def _pct(values: list[float], q: float) -> float | None:
 def summarize(cases: list[Case], results: list[IntakeResult],
               scores: list[FieldScore], threshold: float) -> dict[str, Any]:
     by_doc = {r.document_id: r for r in results}
+    split_of = {c.doc_id: c.truth["split"] for c in cases}
     wrong = [s for s in scores if not s.correct]
 
     doc_rows = []
@@ -143,7 +144,8 @@ def summarize(cases: list[Case], results: list[IntakeResult],
         r = by_doc[c.doc_id]
         s = [x for x in scores if x.doc_id == c.doc_id]
         doc_rows.append({
-            "doc_id": c.doc_id, "doc_type": c.doc_type, "variant": c.truth["variant"],
+            "doc_id": c.doc_id, "doc_type": c.doc_type, "split": c.truth["split"],
+            "variant": c.truth["variant"],
             "expected_review": c.truth["expected_review"],
             "expected_reason": c.truth["expected_reason"], "route": r.route,
             "reason_codes": sorted({x.code for x in r.reasons}),
@@ -187,6 +189,8 @@ def summarize(cases: list[Case], results: list[IntakeResult],
         "fields": len(scores),
         "threshold": threshold,
         "accuracy_overall": _acc(scores),
+        "accuracy_by_split": {sp: _acc([s for s in scores if split_of[s.doc_id] == sp])
+                              for sp in sorted(set(split_of.values()))},
         "accuracy_by_doc_type": {t: _acc([s for s in scores if s.doc_type == t])
                                  for t in sorted({c.doc_type for c in cases})},
         "accuracy_by_variant": {v: _acc([s for s in scores if s.variant == v])

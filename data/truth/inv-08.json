@@ -4,6 +4,7 @@
   "file": "docs/inv-08.png",
   "media_type": "image/png",
   "pages": 1,
+  "split": "core",
   "variant": "scanned_png",
   "layout": "B",
   "expected_review": true,

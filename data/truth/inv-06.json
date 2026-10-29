@@ -4,6 +4,7 @@
   "file": "docs/inv-06.pdf",
   "media_type": "application/pdf",
   "pages": 1,
+  "split": "core",
   "variant": "total_mismatch",
   "layout": "B",
   "expected_review": true,

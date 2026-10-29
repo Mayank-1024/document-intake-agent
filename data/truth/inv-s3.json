@@ -1,0 +1,90 @@
+{
+  "doc_id": "inv-s3",
+  "doc_type": "invoice",
+  "file": "docs/inv-s3.jpg",
+  "media_type": "image/jpeg",
+  "pages": 1,
+  "split": "stress",
+  "variant": "degraded_scan_jpeg",
+  "layout": "A",
+  "expected_review": true,
+  "expected_reason": "no_text_layer",
+  "fields": {
+    "vendor_name": {
+      "value": "Brightwater Industrial Supply LLC",
+      "page": 1,
+      "text": "Brightwater Industrial Supply LLC"
+    },
+    "invoice_number": {
+      "value": "INV-24025",
+      "page": 1,
+      "text": "Invoice No.: INV-24025"
+    },
+    "invoice_date": {
+      "value": "2026-01-15",
+      "page": 1,
+      "text": "Invoice Date: 01/15/2026"
+    },
+    "due_date": {
+      "value": "2026-02-14",
+      "page": 1,
+      "text": "Due Date: 02/14/2026"
+    },
+    "payment_terms": {
+      "value": "Net 30",
+      "page": 1,
+      "text": "Terms: Net 30"
+    },
+    "po_number": {
+      "value": "PO-5946",
+      "page": 1,
+      "text": "PO Number: PO-5946"
+    },
+    "customer_name": {
+      "value": "Sundial Print Works",
+      "page": 1,
+      "text": "Sundial Print Works"
+    },
+    "subtotal": {
+      "value": 810.77,
+      "page": 1,
+      "text": "Subtotal $810.77"
+    },
+    "tax": {
+      "value": 50.67,
+      "page": 1,
+      "text": "Sales Tax (6.25%) $50.67"
+    },
+    "total": {
+      "value": 861.44,
+      "page": 1,
+      "text": "Total Due $861.44"
+    }
+  },
+  "line_items": [
+    {
+      "description": "Floor cleaner concentrate 1 gal",
+      "quantity": 10,
+      "unit_price": 23.85,
+      "amount": 238.5,
+      "page": 1,
+      "text": "Floor cleaner concentrate 1 gal 10 23.85 238.50"
+    },
+    {
+      "description": "Machine screw kit",
+      "quantity": 23,
+      "unit_price": 19.99,
+      "amount": 459.77,
+      "page": 1,
+      "text": "Machine screw kit 23 19.99 459.77"
+    },
+    {
+      "description": "Extension cord 25 ft 12 AWG",
+      "quantity": 3,
+      "unit_price": 37.5,
+      "amount": 112.5,
+      "page": 1,
+      "text": "Extension cord 25 ft 12 AWG 3 37.50 112.50"
+    }
+  ]
+}

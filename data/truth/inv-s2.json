@@ -1,0 +1,122 @@
+{
+  "doc_id": "inv-s2",
+  "doc_type": "invoice",
+  "file": "docs/inv-s2.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "split": "stress",
+  "variant": "deposit_balance_due",
+  "layout": "B",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "vendor_name": {
+      "value": "Pinegate Janitorial Supply Co.",
+      "page": 1,
+      "text": "Pinegate Janitorial Supply Co."
+    },
+    "invoice_number": {
+      "value": "B446346",
+      "page": 1,
+      "text": "Bill Number: B446346"
+    },
+    "invoice_date": {
+      "value": "2026-06-20",
+      "page": 1,
+      "text": "Date Issued: June 20, 2026"
+    },
+    "due_date": {
+      "value": "2026-08-04",
+      "page": 1,
+      "text": "Payment Due: August 4, 2026"
+    },
+    "payment_terms": {
+      "value": "Net 45",
+      "page": 1,
+      "text": "Terms: Net 45"
+    },
+    "po_number": {
+      "value": "PO-8729",
+      "page": 1,
+      "text": "Customer PO: PO-8729"
+    },
+    "customer_name": {
+      "value": "Sundial Print Works",
+      "page": 1,
+      "text": "Sundial Print Works"
+    },
+    "subtotal": {
+      "value": 2057.49,
+      "page": 1,
+      "text": "Subtotal $2,057.49"
+    },
+    "tax": {
+      "value": 144.02,
+      "page": 1,
+      "text": "Sales Tax (7.00%) $144.02"
+    },
+    "total": {
+      "value": 2201.51,
+      "page": 1,
+      "text": "Invoice Total $2,201.51"
+    }
+  },
+  "line_items": [
+    {
+      "description": "Wire nuts assorted, jar",
+      "quantity": 21,
+      "unit_price": 12.15,
+      "amount": 255.15,
+      "page": 1,
+      "text": "Wire nuts assorted, jar 21 12.15 255.15"
+    },
+    {
+      "description": "Cable ties 8 in, bag of 500",
+      "quantity": 11,
+      "unit_price": 18.3,
+      "amount": 201.3,
+      "page": 1,
+      "text": "Cable ties 8 in, bag of 500 11 18.30 201.30"
+    },
+    {
+      "description": "Trash liners 55 gal, case",
+      "quantity": 4,
+      "unit_price": 41.25,
+      "amount": 165.0,
+      "page": 1,
+      "text": "Trash liners 55 gal, case 4 41.25 165.00"
+    },
+    {
+      "description": "Machine screw kit",
+      "quantity": 24,
+      "unit_price": 19.99,
+      "amount": 479.76,
+      "page": 1,
+      "text": "Machine screw kit 24 19.99 479.76"
+    },
+    {
+      "description": "Machine screw kit",
+      "quantity": 2,
+      "unit_price": 19.99,
+      "amount": 39.98,
+      "page": 1,
+      "text": "Machine screw kit 2 19.99 39.98"
+    },
+    {
+      "description": "Stretch wrap 18 in x 1500 ft",
+      "quantity": 14,
+      "unit_price": 27.95,
+      "amount": 391.3,
+      "page": 1,
+      "text": "Stretch wrap 18 in x 1500 ft 14 27.95 391.30"
+    },
+    {
+      "description": "Extension cord 25 ft 12 AWG",
+      "quantity": 14,
+      "unit_price": 37.5,
+      "amount": 525.0,
+      "page": 1,
+      "text": "Extension cord 25 ft 12 AWG 14 37.50 525.00"
+    }
+  ]
+}

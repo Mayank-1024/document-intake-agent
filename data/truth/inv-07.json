@@ -4,6 +4,7 @@
   "file": "docs/inv-07.pdf",
   "media_type": "application/pdf",
   "pages": 1,
+  "split": "core",
   "variant": "missing_field",
   "layout": "A",
   "expected_review": true,

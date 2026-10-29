@@ -4,6 +4,7 @@
   "file": "docs/w2-04.pdf",
   "media_type": "application/pdf",
   "pages": 1,
+  "split": "core",
   "variant": "standard",
   "layout": "A",
   "expected_review": false,

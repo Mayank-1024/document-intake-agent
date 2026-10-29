@@ -44,8 +44,12 @@ class Case:
         return out
 
 
-def load_cases(data_dir: Path = DATA, ids: list[str] | None = None) -> list[Case]:
+def load_cases(data_dir: Path = DATA, ids: list[str] | None = None,
+               split: str = "all") -> list[Case]:
+    """split: core (the 30 main documents), stress (9 adversarial ones), or all."""
     cases = [Case(json.loads(p.read_text())) for p in sorted((data_dir / "truth").glob("*.json"))]
+    if split != "all":
+        cases = [c for c in cases if c.truth["split"] == split]
     if ids:
         cases = [c for c in cases if c.doc_id in ids]
     return cases

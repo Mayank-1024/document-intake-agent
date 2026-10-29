@@ -6,12 +6,18 @@ Writes data/docs/<doc_id>.pdf|.png and data/truth/<doc_id>.json, plus
 data/manifest.json. Every name, company, address, policy number, SSN and amount
 is invented. SSNs start with 000, which the SSA never issues.
 
-Three document types (invoice, w2, loss_run), 10 of each. Some documents are
+Core split: three document types (invoice, w2, loss_run), 10 of each. Some are
 deliberately hard: rasterized "scans" with rotation and noise (no text layer),
 two-page documents, a missing required field, and documents whose printed
 numbers do not add up. The ground truth is what is PRINTED on the page, so an
 extractor that faithfully reads a wrong total is correct; it is the rules'
 job to send that document to review. `expected_review` records that intent.
+
+Stress split (9 more documents): layout distractors (a Ship To company above
+the Bill To, a balance due under the invoice total, a per-page subtotal, a
+negative discount line, split paid columns, a capped W-2 box 3) and badly
+degraded scans. These were added after the core run showed the clean set
+was too easy to exercise review routing.
 
 Each truth field also stores the page and the exact printed text it came
 from. The offline scripted model uses that text as its citation, and a test
@@ -25,6 +31,7 @@ import random
 import shutil
 import subprocess
 import tempfile
+import time
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -95,7 +102,7 @@ def money(x: float) -> str:
 
 
 def plain(x: float) -> str:
-    return f"{x:,.2f}"
+    return f"({abs(x):,.2f})" if x < 0 else f"{x:,.2f}"  # accounting style for negatives
 
 
 def us_date(d: date) -> str:
@@ -151,12 +158,16 @@ def make_invoice(rng: random.Random, doc_id: str, path: Path, variant: str, layo
     d = Doc(doc_id, "invoice", path)
     vendor, vaddr = rng.choice(VENDORS)
     customer, caddr = rng.choice(CUSTOMERS)
-    n_items = 26 if variant == "two_page" else rng.randint(3, 7)
+    two = variant in ("two_page", "page_subtotal")
+    n_items = 26 if two else rng.randint(3, 7)
     picks = [rng.choice(PRODUCTS) for _ in range(n_items)]
     items = []
     for desc, price in picks:
         qty = rng.randint(1, 24)
         items.append((desc, qty, price, r2(qty * price)))
+    if variant == "discount_line":
+        off = rng.choice([-25.00, -40.00, -15.50])
+        items.append(("Loyalty discount", 1, off, off))
     subtotal = r2(sum(i[3] for i in items))
     rate = rng.choice([0.0575, 0.0625, 0.07])
     tax = r2(subtotal * rate)
@@ -170,7 +181,7 @@ def make_invoice(rng: random.Random, doc_id: str, path: Path, variant: str, layo
               else f"B{rng.randint(100000, 999999)}")
     po = f"PO-{rng.randint(4000, 9999)}"
     fmt = us_date if layout == "A" else long_date
-    pages = 2 if variant == "two_page" else 1
+    pages = 2 if two else 1
 
     # header
     d.text(40, H - 60, vendor, size=15, bold=True)
@@ -194,10 +205,17 @@ def make_invoice(rng: random.Random, doc_id: str, path: Path, variant: str, layo
         d.text(val_x, y, shown, size=9, right=True)
         d.field(name, value.isoformat() if isinstance(value, date) else value, f"{label} {shown}")
         y -= 14
-    d.text(40, H - 110, "Bill To:" if layout == "A" else "Customer:", size=9, bold=True)
-    d.text(40, H - 124, customer, size=10)
+    bill_y = H - 110
+    if variant == "ship_to_distractor":  # a different company printed first, as Ship To
+        ship, saddr = rng.choice([c for c in CUSTOMERS if c[0] != customer])
+        d.text(40, bill_y, "Ship To:", size=9, bold=True)
+        d.text(40, bill_y - 14, ship, size=10)
+        d.text(40, bill_y - 27, saddr, size=9)
+        bill_y -= 45
+    d.text(40, bill_y, "Bill To:" if layout == "A" else "Customer:", size=9, bold=True)
+    d.text(40, bill_y - 14, customer, size=10)
     d.field("customer_name", customer, customer)
-    d.text(40, H - 137, caddr, size=9)
+    d.text(40, bill_y - 27, caddr, size=9)
 
     # line items
     cols = (40, 360, 450, W - 40)
@@ -211,11 +229,16 @@ def make_invoice(rng: random.Random, doc_id: str, path: Path, variant: str, layo
         d.text(cols[3], y, head[3], size=9, bold=True, right=True)
         d.c.line(40, y - 4, W - 40, y - 4)
 
-    y = H - 200
+    y = H - 200 if variant != "ship_to_distractor" else H - 230
     header_row(y)
     y -= 18
     for i, (desc, qty, price, amount) in enumerate(items):
-        if variant == "two_page" and i == 18:
+        if two and i == 18:
+            if variant == "page_subtotal":  # a per-page subtotal that is NOT the invoice subtotal
+                page_sum = r2(sum(it[3] for it in items[:18]))
+                d.text(360, y - 6, "Page 1 subtotal", size=9, bold=True)
+                d.text(W - 40, y - 6, money(page_sum), size=9, bold=True, right=True)
+                y -= 16
             d.text(W - 40, y - 6, "Continued on next page", size=8, right=True)
             d.new_page(pages)
             y = H - 60
@@ -235,14 +258,23 @@ def make_invoice(rng: random.Random, doc_id: str, path: Path, variant: str, layo
     # totals
     y -= 10
     d.c.line(360, y + 8, W - 40, y + 8)
-    for label, name, value in (
+    total_rows = [
         ("Subtotal", "subtotal", subtotal),
         (f"Sales Tax ({rate * 100:.2f}%)", "tax", tax),
         ("Total Due" if layout == "A" else "Amount Due", "total", printed_total),
-    ):
-        d.text(360, y, label, size=10, bold=(name == "total"))
-        d.text(W - 40, y, money(value), size=10, bold=(name == "total"), right=True)
-        d.field(name, value, f"{label} {money(value)}")
+    ]
+    if variant == "deposit_balance_due":  # the invoice total is not the amount still owed
+        deposit = r2(total * rng.choice([0.25, 0.3, 0.5]))
+        total_rows[2] = ("Invoice Total", "total", printed_total)
+        total_rows += [("Deposit Received", None, -deposit),
+                       ("Balance Due", None, r2(printed_total - deposit))]
+    for label, name, value in total_rows:
+        shown = f"-{money(-value)}" if value < 0 else money(value)
+        bold = label == "Balance Due" or (name == "total" and variant != "deposit_balance_due")
+        d.text(360, y, label, size=10, bold=bold)
+        d.text(W - 40, y, shown, size=10, bold=bold, right=True)
+        if name:
+            d.field(name, value, f"{label} {shown}")
         y -= 16
     d.text(40, 90, f"Please remit to {vendor}, {vaddr}.", size=8)
     d.text(40, 78, f"Reference invoice {number} with your payment.", size=8)
@@ -264,12 +296,16 @@ def make_w2(rng: random.Random, doc_id: str, path: Path, variant: str) -> Doc:
     ssn = f"000-{rng.randint(10, 99)}-{rng.randint(1000, 9999)}"
     ein = f"{rng.randint(10, 99)}-{rng.randint(1000000, 9999999)}"
     gross = r2(rng.uniform(38000, 142000))
+    if variant == "high_earner":  # box 3 capped at the wage base, box 6 includes the 0.9% surtax
+        gross = r2(rng.uniform(205000, 240000))
     pretax_401k = r2(gross * rng.choice([0.0, 0.03, 0.05, 0.06]))
     box1 = r2(gross - pretax_401k)
     box3 = box5 = gross
     box2 = r2(box1 * rng.uniform(0.08, 0.17))
+    if variant == "high_earner":
+        box3 = 176_100.00
     box4 = r2(box3 * 0.062)
-    box6 = r2(box5 * 0.0145)
+    box6 = r2(box5 * 0.0145 + max(0.0, box5 - 200_000) * 0.009)
     if variant == "ss_tax_mismatch":
         box4 = r2(box4 + 400.00)
 
@@ -353,6 +389,10 @@ def make_loss_run(rng: random.Random, doc_id: str, path: Path, variant: str, lay
     claims.sort(key=lambda c: c["date_of_loss"])
     if variant == "date_out_of_period":
         claims[1]["date_of_loss"] = end + timedelta(days=rng.randint(20, 80))
+    split = variant == "split_paid_columns"  # indemnity + expense columns before total paid
+    for c in claims if split else []:
+        c["indemnity"] = r2(c["paid"] * rng.uniform(0.55, 0.9))
+        c["expense"] = r2(c["paid"] - c["indemnity"])
     tot_paid = r2(sum(c["paid"] for c in claims))
     tot_res = r2(sum(c["reserved"] for c in claims))
     tot_inc = r2(sum(c["incurred"] for c in claims))
@@ -389,6 +429,10 @@ def make_loss_run(rng: random.Random, doc_id: str, path: Path, variant: str, lay
     if layout == "B":
         cols[3] = (385, "Open/Closed", False)
         cols[5] = (522, "Outstanding", True)
+    if split:
+        cols = [(40, "Claim No.", False), (108, "Loss Date", False), (170, "Status", False),
+                (300, "Indemnity Paid", True), (372, "Expense Paid", True),
+                (444, "Total Paid", True), (508, "Reserve", True), (W - 40, "Incurred", True)]
 
     def header_row(y):
         for x, label, right in cols:
@@ -410,8 +454,13 @@ def make_loss_run(rng: random.Random, doc_id: str, path: Path, variant: str, lay
             header_row(y)
             y -= 16
         status = cl["status"].title() if layout == "A" else cl["status"].upper()
-        cells = (cl["claim_number"], fmt(cl["date_of_loss"]), cl["description"], status,
-                 plain(cl["paid"]), plain(cl["reserved"]), plain(cl["incurred"]))
+        if split:
+            cells = (cl["claim_number"], fmt(cl["date_of_loss"]), status, plain(cl["indemnity"]),
+                     plain(cl["expense"]), plain(cl["paid"]), plain(cl["reserved"]),
+                     plain(cl["incurred"]))
+        else:
+            cells = (cl["claim_number"], fmt(cl["date_of_loss"]), cl["description"], status,
+                     plain(cl["paid"]), plain(cl["reserved"]), plain(cl["incurred"]))
         for (x, _, right), s in zip(cols, cells, strict=True):
             d.text(x, y, s, size=8, right=right)
         d.items.append({"claim_number": cl["claim_number"],
@@ -422,10 +471,13 @@ def make_loss_run(rng: random.Random, doc_id: str, path: Path, variant: str, lay
     y -= 6
     d.c.line(40, y + 10, W - 40, y + 10)
     d.text(40, y, f"Totals ({len(claims)} claims)", size=8, bold=True)
-    for (x, _, _), value in zip(cols[4:], (tot_paid, tot_res, tot_inc), strict=True):
+    total_values = [tot_paid, tot_res, tot_inc]
+    if split:
+        total_values = [r2(sum(c["indemnity"] for c in claims)),
+                        r2(sum(c["expense"] for c in claims))] + total_values
+    for (x, _, _), value in zip(cols[-len(total_values):], total_values, strict=True):
         d.text(x, y, plain(value), size=8, bold=True, right=True)
-    totals_text = (f"Totals ({len(claims)} claims) "
-                   f"{plain(tot_paid)} {plain(tot_res)} {plain(tot_inc)}")
+    totals_text = f"Totals ({len(claims)} claims) " + " ".join(plain(v) for v in total_values)
     d.field("total_paid", tot_paid, totals_text)
     d.field("total_reserved", tot_res, totals_text)
     d.field("total_incurred", tot_inc, totals_text)
@@ -437,22 +489,37 @@ def make_loss_run(rng: random.Random, doc_id: str, path: Path, variant: str, lay
 
 # ---------------------------------------------------------------- scans
 
-def rasterize(pdf: Path, out: Path, rng: random.Random, as_pdf: bool) -> None:
-    """Render page 1 to an image, rotate slightly, add speckle noise and blur."""
+def rasterize(pdf: Path, out: Path, rng: random.Random, fmt: str, *, dpi: int = 130,
+              max_rotation: float = 2.2, noise_every: int = 120, blur: float = 0.6,
+              all_pages: bool = False) -> None:
+    """Render pages to images, rotate slightly, add speckle noise and blur.
+
+    fmt is "png" or "jpeg" (first page only) or "pdf" (an image-only PDF, no text layer).
+    The "degraded" stress scans use a lower dpi, more rotation, more noise and heavy JPEG
+    compression.
+    """
     with tempfile.TemporaryDirectory() as tmp:
-        subprocess.run(["pdftoppm", "-r", "130", "-gray", "-png", "-f", "1", "-l", "1",
-                        str(pdf), f"{tmp}/p"], check=True)
-        img = Image.open(next(Path(tmp).glob("p*.png"))).convert("L")
-    img = img.rotate(rng.uniform(-2.2, 2.2), resample=Image.BICUBIC, expand=True, fillcolor=255)
-    px = img.load()
-    for _ in range(img.width * img.height // 120):
-        x, y = rng.randrange(img.width), rng.randrange(img.height)
-        px[x, y] = rng.randint(0, 120) if rng.random() < 0.5 else 255
-    img = img.filter(ImageFilter.GaussianBlur(0.6))
-    if as_pdf:
-        img.save(out, "PDF", resolution=130)
+        last = [] if all_pages else ["-f", "1", "-l", "1"]
+        subprocess.run(["pdftoppm", "-r", str(dpi), "-gray", "-png", *last, str(pdf),
+                        f"{tmp}/p"], check=True)
+        pages = [Image.open(p).convert("L") for p in sorted(Path(tmp).glob("p*.png"))]
+    images = []
+    for img in pages:
+        img = img.rotate(rng.uniform(-max_rotation, max_rotation), resample=Image.BICUBIC,
+                         expand=True, fillcolor=255)
+        px = img.load()
+        for _ in range(img.width * img.height // noise_every):
+            x, y = rng.randrange(img.width), rng.randrange(img.height)
+            px[x, y] = rng.randint(0, 120) if rng.random() < 0.5 else 255
+        images.append(img.filter(ImageFilter.GaussianBlur(blur)))
+    if fmt == "pdf":
+        extra = {"save_all": True, "append_images": images[1:]} if len(images) > 1 else {}
+        stamp = time.strptime("2026-10-29", "%Y-%m-%d")  # fixed dates: byte-reproducible file
+        images[0].save(out, "PDF", resolution=dpi, creationDate=stamp, modDate=stamp, **extra)
+    elif fmt == "jpeg":
+        images[0].save(out, "JPEG", quality=30)
     else:
-        img.save(out, "PNG", optimize=True)
+        images[0].save(out, "PNG", optimize=True)
 
 
 # ---------------------------------------------------------------- plan
@@ -475,13 +542,28 @@ PLAN = [
     ("lr-07", "loss_run", "no_claims", "A"), ("lr-08", "loss_run", "scanned_png", "B"),
     ("lr-09", "loss_run", "scanned_pdf", "A"), ("lr-10", "loss_run", "standard", "B"),
 ]
+# Stress split: built after the core 30 (so their bytes do not change) to provoke real model
+# mistakes: a distractor printed near the right value, or a badly degraded scan.
+STRESS_PLAN = [
+    ("inv-s1", "invoice", "ship_to_distractor", "A"),
+    ("inv-s2", "invoice", "deposit_balance_due", "B"),
+    ("inv-s3", "invoice", "degraded_scan_jpeg", "A"),
+    ("inv-s4", "invoice", "discount_line", "B"),
+    ("inv-s5", "invoice", "page_subtotal", "A"),
+    ("w2-s1", "w2", "high_earner", "A"),
+    ("w2-s2", "w2", "degraded_scan_jpeg", "A"),
+    ("lr-s1", "loss_run", "split_paid_columns", "A"),
+    ("lr-s2", "loss_run", "degraded_scan_two_page", "B"),
+]
 # Why each hard case should land in review. Standard, two-page and no-claims documents
 # have no expected reason, so a review route there is a false alarm.
 EXPECTED_REASON = {
     "total_mismatch": "rule_failed", "ss_tax_mismatch": "rule_failed",
     "date_out_of_period": "rule_failed", "missing_field": "missing_required",
     "scanned_png": "no_text_layer", "scanned_pdf": "no_text_layer",
+    "degraded_scan_jpeg": "no_text_layer", "degraded_scan_two_page": "no_text_layer",
 }
+DEGRADED = {"dpi": 80, "max_rotation": 3.5, "noise_every": 45, "blur": 0.8}
 
 
 def generate(out_root: Path = ROOT) -> list[dict]:
@@ -491,9 +573,11 @@ def generate(out_root: Path = ROOT) -> list[dict]:
         p.mkdir(parents=True)
     rng = random.Random(SEED)
     manifest = []
-    for doc_id, doc_type, variant, layout in PLAN:
-        scanned = variant.startswith("scanned")
-        base_variant = "standard" if scanned else variant
+    plans = [(p, "core") for p in PLAN] + [(p, "stress") for p in STRESS_PLAN]
+    for (doc_id, doc_type, variant, layout), split in plans:
+        scanned = variant.startswith(("scanned", "degraded"))
+        base_variant = ("two_page" if variant == "degraded_scan_two_page" else "standard") \
+            if scanned else variant
         pdf = docs_dir / f"{doc_id}.pdf"
         if doc_type == "invoice":
             d = make_invoice(rng, doc_id, pdf, base_variant, layout)
@@ -502,21 +586,23 @@ def generate(out_root: Path = ROOT) -> list[dict]:
         else:
             d = make_loss_run(rng, doc_id, pdf, base_variant, layout)
         file = pdf
-        if variant == "scanned_png":
-            file = docs_dir / f"{doc_id}.png"
-            rasterize(pdf, file, rng, as_pdf=False)
+        if variant in ("scanned_png", "degraded_scan_jpeg"):
+            jpeg = variant == "degraded_scan_jpeg"
+            file = docs_dir / f"{doc_id}.{'jpg' if jpeg else 'png'}"
+            rasterize(pdf, file, rng, "jpeg" if jpeg else "png", **(DEGRADED if jpeg else {}))
             pdf.unlink()
-        elif variant == "scanned_pdf":
+        elif variant in ("scanned_pdf", "degraded_scan_two_page"):
             scan = docs_dir / f"{doc_id}-scan.pdf"
-            rasterize(pdf, scan, rng, as_pdf=True)
+            two = variant == "degraded_scan_two_page"
+            rasterize(pdf, scan, rng, "pdf", all_pages=two, **(DEGRADED if two else {}))
             pdf.unlink()
-            file = docs_dir / f"{doc_id}.pdf"
-            scan.rename(file)
+            scan.rename(pdf)
         item_key = {"invoice": "line_items", "loss_run": "claims"}.get(doc_type)
         truth = {
             "doc_id": doc_id, "doc_type": doc_type, "file": f"docs/{file.name}",
-            "media_type": "image/png" if file.suffix == ".png" else "application/pdf",
-            "pages": d.pages, "variant": variant, "layout": layout,
+            "media_type": {".png": "image/png", ".jpg": "image/jpeg"}.get(file.suffix,
+                                                                         "application/pdf"),
+            "pages": d.pages, "split": split, "variant": variant, "layout": layout,
             "expected_review": variant in EXPECTED_REASON,
             "expected_reason": EXPECTED_REASON.get(variant),
             "fields": d.fields,
@@ -524,7 +610,7 @@ def generate(out_root: Path = ROOT) -> list[dict]:
         if item_key:
             truth[item_key] = d.items
         (truth_dir / f"{doc_id}.json").write_text(json.dumps(truth, indent=2) + "\n")
-        manifest.append({k: truth[k] for k in ("doc_id", "doc_type", "file", "variant",
+        manifest.append({k: truth[k] for k in ("doc_id", "doc_type", "file", "split", "variant",
                                                 "expected_review")})
     (out_root / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     return manifest

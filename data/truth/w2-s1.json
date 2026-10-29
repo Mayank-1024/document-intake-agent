@@ -1,0 +1,69 @@
+{
+  "doc_id": "w2-s1",
+  "doc_type": "w2",
+  "file": "docs/w2-s1.pdf",
+  "media_type": "application/pdf",
+  "pages": 1,
+  "split": "stress",
+  "variant": "high_earner",
+  "layout": "A",
+  "expected_review": false,
+  "expected_reason": null,
+  "fields": {
+    "tax_year": {
+      "value": 2025,
+      "page": 1,
+      "text": "2025"
+    },
+    "employee_ssn": {
+      "value": "XXX-XX-7151",
+      "page": 1,
+      "text": "XXX-XX-7151"
+    },
+    "employer_ein": {
+      "value": "64-8702069",
+      "page": 1,
+      "text": "64-8702069"
+    },
+    "employer_name": {
+      "value": "Tamberlane Freight Systems Inc.",
+      "page": 1,
+      "text": "Tamberlane Freight Systems Inc."
+    },
+    "employee_name": {
+      "value": "Jonah Lindqvist",
+      "page": 1,
+      "text": "Jonah Lindqvist"
+    },
+    "wages": {
+      "value": 203452.97,
+      "page": 1,
+      "text": "203,452.97"
+    },
+    "federal_income_tax_withheld": {
+      "value": 33288.66,
+      "page": 1,
+      "text": "33,288.66"
+    },
+    "social_security_wages": {
+      "value": 176100.0,
+      "page": 1,
+      "text": "176,100.00"
+    },
+    "social_security_tax_withheld": {
+      "value": 10918.2,
+      "page": 1,
+      "text": "10,918.20"
+    },
+    "medicare_wages": {
+      "value": 216439.33,
+      "page": 1,
+      "text": "216,439.33"
+    },
+    "medicare_tax_withheld": {
+      "value": 3286.32,
+      "page": 1,
+      "text": "3,286.32"
+    }
+  }
+}
