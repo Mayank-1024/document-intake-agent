@@ -12,8 +12,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 
-# USD per million tokens (input, output), Anthropic first-party list prices, checked
-# 2026-10-29. Haiku 5.5's price applies to prompts up to 100K tokens; ours are far smaller.
+# USD per million tokens (input, output): Anthropic first-party list prices as published in
+# October 2026. Haiku 5.5's price applies to prompts up to 100K tokens; ours are far smaller.
 PRICING = {
     "claude-haiku-5-5": (0.10, 0.50),
     "claude-sonnet-5-5": (2.00, 10.00),
