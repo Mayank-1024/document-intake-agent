@@ -23,8 +23,7 @@ SEPARATED_SSN = re.compile(r"\b\d{3}-\d{2}-\d{4}\b")
 
 def mask_ssn(text: str) -> str:
     """Mask a value that is known to be an SSN (any common format)."""
-    m = FULL_SSN.search(text)
-    return f"XXX-XX-{m.group(3)}" if m else text
+    return FULL_SSN.sub(lambda m: f"XXX-XX-{m.group(3)}", text)
 
 
 def redact(text: str) -> str:
